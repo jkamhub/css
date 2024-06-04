@@ -7,8 +7,8 @@
 }
 
 /* basic css */
-* {word-break:keep-all; box-sizing:border-box; }
-html, body {width: 100%; text-size-adjust:none; }
+* {word-break:keep-all; box-sizing:border-box; font-family: "Pretendard Variable"; }
+html, body {width: 100%; /*text-size-adjust:none;*/ }
 body, a { font-size: 16px; line-height: 30px; color: #333; font-weight: 500; letter-spacing: -.5px; }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset,
 input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
