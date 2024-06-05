@@ -15,5 +15,5 @@ input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 {font-size:100%; }
 li {list-style: none; }
 img {border: 0 none; }
-a {text-decoration: none; }
+a, a:link {color:#111aff; text-decoration: none; }
 
