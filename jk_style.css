@@ -1,7 +1,7 @@
 @import url(https://jkamhub.github.io/css/font_stylesheet.css);
 
 /* mobile css */
-@media only screen and (max-width: 961px) {
+@media and (max-width: 959px) {
 	#view_contents_wrap .titleType .artTplDetail .artTplInner {display: block; }
 	#view_contents_wrap br {display: block; }
 }
