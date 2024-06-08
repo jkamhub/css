@@ -12,6 +12,7 @@ body, a { font-size: 1rem; line-height: 1em; color: #333; font-weight: 500; lett
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset,
 input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 {font-size:100%; }
+ul {margin:0 0; padding:0 0;}
 li {list-style: none; }
 img {border: 0 none; }
 a, a:link {color:#ff501b; text-decoration: none; }
