@@ -13,7 +13,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset,
 input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 {font-size:100%; }
 ol, ul, li {margin:0 0; padding:0 0; list-style: none; }
-img {border: 0; }
+img {border:0; max-width:100%; display:block; }
 a, a:link {color:#ff501b; text-decoration: none; }
 
 /* web css */
