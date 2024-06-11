@@ -2,18 +2,17 @@
 
 /* mobile css */
 @media only screen and (max-width: 961px) {
-	#view_contents_wrap .titleType .artTplDetail .artTplInner {display: block; }
-	#view_contents_wrap br {display: block; }
+	#devCoDetail .titleType .artTplDetail .artTplInner {display: block; }
+	#devCoDetail br {display: block; }
 }
 
 /* basic css */
 * {word-break:keep-all; box-sizing:border-box; font-family: "Pretendard Variable"; }
-html, body {width: 100%; /*text-size-adjust:none;*/ }
+html, body {width: 100%; }
 body, a { font-size: 16px; line-height: 1.75rem; color: #333; font-weight: 500; letter-spacing: -.5px; }
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset,
-input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 {font-size:100%; }
 li {list-style: none; }
-img {border: 0; max-width:100%; }
+img {border:0; max-width:100%; }
 a, a:link {color:#111aff; text-decoration: none; }
 
