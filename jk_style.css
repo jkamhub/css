@@ -17,3 +17,7 @@ ul, ol, li {list-style: none; }
 img {border:0; max-width:100%; }
 a, a:link, a:active, a:visited, a:hover {font-size: 16px; color:#111aff; text-decoration: none; }
 table{border-collapse: collapse; border-spacing: 0;}
+
+/* icon license */
+.icon8 {display:flex; font-family: Roboto Mono, monospace !important; font-size:0.5rem; line-height:0.5rem; color: #e2e4e3; font-weight:300; position: absolute; bottom: 0; right: 0; }
+.icon8 > a {font-family: Roboto Mono, monospace !important; font-size:0.5rem; line-height:0.5rem; color: #e2e4e3; font-weight:300; }
