@@ -57,3 +57,8 @@
         font-family: "MaruBuri-Regular";
         src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff") format("woff");
 }
+
+@font-face {
+    font-family: "SuseongHyejeong";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/SuseongHyejeong.woff2") format("woff2");
+}
