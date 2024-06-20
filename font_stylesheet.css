@@ -107,3 +107,8 @@
     font-family: "SUIT-Heavy";
     src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Heavy.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "YClover-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Regular.woff2") format("woff2");
+}
