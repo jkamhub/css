@@ -114,3 +114,17 @@
 }
 
 @import url('https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+
+@font-face {
+    font-family: "SunBatang-Light";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SunBatang-Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SunBatang-Medium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Bold.woff")
