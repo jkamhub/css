@@ -1,0 +1,25 @@
+@import url(https://jkamhub.github.io/css/font_stylesheet.css);
+
+/* mobile css */
+@media (max-width: 774px) {
+    #detail-content .regDetailView_1 {transform: scale(1.239, 1.239); transform-origin: top; }
+}
+
+/* basic css */
+* {word-break:keep-all; box-sizing:border-box; font-family: "Pretendard Variable" !important; }
+html, body {width: 100%; }
+body { font-size: 1rem; line-height: 1.5em; color: #333; font-weight: 500; letter-spacing: -.5px; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset,
+input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 {font-size:100%; }
+ol, ul, li {margin:0 0; padding:0 0; list-style: none; }
+img {border:0; width:100%; }
+a, a:link, a:active, a:visited, a:hover {font-size: 1rem; color:#ff501b; text-decoration: none; }
+
+/* web css */ /* 240613 미완성 */
+.regDetailView {width: 100%; margin:0; padding:0.1rem 0; }
+.regDetailView .tempArea {width: 100%; }
+.tempColor_1, .tempColor_2, .tempColor_3, .tempColor_4, .tempColor_5,
+.tempColor_6, .tempColor_7, .tempColor_8, .tempColor_9 {display:grid; grid-auto-flow:row; row-gap:1.563rem; }
+.regDetailView .tempArea .tempSec {display:grid; grid-auto-flow:row; row-gap:0.625rem; margin:0; padding:0; line-height: inherit; }
+.regDetailView .tempArea .tempRecruit .txtWp {padding:0 !important; margin:0.5rem 0.25rem 1rem 0.25rem; }
