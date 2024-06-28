@@ -2,7 +2,7 @@
 
 /* mobile css */
 @media (max-width: 774px) {
-    .regDetailView_1 {transform: scale(1.239, 1.239); transform-origin: top; }
+     #detail-content .regDetailView_1 {  }
 }
 
 /* basic css */
@@ -16,10 +16,4 @@ ol, ul, li {margin:0 0; padding:0 0; list-style: none; }
 img {border:0; width:100%; }
 a, a:link, a:active, a:visited, a:hover {font-size: 1rem; color:#ff501b; text-decoration: none; }
 
-/* web css */ /* 240613 미완성 */
-.regDetailView {width: 100%; margin:0; padding:0.1rem 0; }
-.regDetailView .tempArea {width: 100%; }
-.tempColor_1, .tempColor_2, .tempColor_3, .tempColor_4, .tempColor_5,
-.tempColor_6, .tempColor_7, .tempColor_8, .tempColor_9 {display:grid; grid-auto-flow:row; row-gap:1.563rem; }
-.regDetailView .tempArea .tempSec {display:grid; grid-auto-flow:row; row-gap:0.625rem; margin:0; padding:0; line-height: inherit; }
-.regDetailView .tempArea .tempRecruit .txtWp {padding:0 !important; margin:0.5rem 0.25rem 1rem 0.25rem; }
+
