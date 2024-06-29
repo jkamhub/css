@@ -4,7 +4,7 @@
 @media only screen and (max-width: 961px) {
 	body {border:none; }
 	#view_contents_wrap .titleType .artTplDetail .artTplInner {display: block; }
-	#view_contents_wrap br {display: block; }
+	#view_contents_wrap br {display: block; content: none; }
 }
 
 /* basic css */
