@@ -1,0 +1,50 @@
+@import url(https://i.jobkorea.kr/content/css/ver_2/jobs/detail.css);
+
+.icnBul_1 dd:before, .icnBul_1 li:before, .icnBul_2 dd:before, .icnBul_2 li:before, .icnBul_3 dd:before,
+.icnBul_3 li:before, .icnBul_4 dd:before, .icnBul_4 li:before, .icnBul_5 dd:before, .icnBul_5 li:before { position: relative; }
+
+.icnBul_1 > dd:before, .icnBul_1 > li:before { left: -0.25rem; }
+
+/*** max-width: 961px 시작 ***/
+@media only screen and (max-width: 961px) {
+    #view_contents_wrap {
+
+        #secDetailRead .newTemp.artTplDetail table *, #secDetailRead .tbDetailDiv * { font-size: 1rem !important; }
+
+        #secDetailRead .tbDetailDiv *, #secDetailRead .newTemp.artTplDetail table *, #secDetailRead .artOther .ulList li,
+        #secDetailRead .artTplDetail .listWrap dd .desc *, #secDetailRead .artTplDetail .listWrap li .desc *, #secDetailRead .dlList dd,
+		#secDetailRead .dlList dd *, #secDetailRead .dlList dd li, #secDetailRead .dlList dd li *, #secDetailRead .dlList dt,
+		#secDetailRead .olList li, #secDetailRead .olList li *, #secDetailRead .tbDetailWrap tbody td .desc *,
+		#secDetailRead .ulList li, #secDetailRead .ulList li * { font-size: 1rem; }
+
+    } /** #view_contents_wrap 끝 **/
+} /*** max-width: 961px 끝 / 위의 #view_contents_wrap 괄호까지 반드시 유지 ***/
+
+/*** max-width: 767px 시작 ***/
+@media only screen and (max-width: 767px) {
+    #view_contents_wrap {
+
+        #secDetailRead .dlList dd, #secDetailRead .dlList dd li, 
+		#secDetailRead .olList li, #secDetailRead .ulList li { padding-left: 1rem; }
+
+        #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap {
+            margin-top: 0; border-color: #fff;
+        }
+
+        #secDetailRead .newTemp.artTplDetail table * {
+            font-size: 0.875rem;
+            line-height: 1.75;
+        }
+
+        #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td {
+            padding: 0.625rem !important;
+        }
+
+        #secDetailRead .tbDetailDiv *,
+		#secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td:first-child,
+        #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td:first-child * {
+            font-size: 1rem;
+        }
+
+    }/** #view_contents_wrap 끝 **/
+} /*** max-width: 767px 끝 / 위의 #view_contents_wrap 괄호까지 반드시 유지 ***/
