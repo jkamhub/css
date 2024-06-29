@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url(https://jkamhub.github.io/css/font_stylesheet.css);
 
 /* mobile css */
@@ -8,7 +9,7 @@
 }
 
 /* basic css */
-* {word-break:keep-all; box-sizing:border-box; font-family: "Pretendard Variable" !important; }
+* {font-family: "Pretendard Variable" !important; word-break:keep-all; box-sizing:border-box; }
 html, body {width: 100%; }
 body { font-size: 16px; line-height: 1.5em; color: #333; font-weight: 400; letter-spacing: -.5px; }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
