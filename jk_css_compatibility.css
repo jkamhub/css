@@ -1,10 +1,5 @@
 @import url(https://i.jobkorea.kr/content/css/ver_2/jobs/detail.css);
 
-.icnBul_1 dd:before, .icnBul_1 li:before, .icnBul_2 dd:before, .icnBul_2 li:before, .icnBul_3 dd:before,
-.icnBul_3 li:before, .icnBul_4 dd:before, .icnBul_4 li:before, .icnBul_5 dd:before, .icnBul_5 li:before { position: relative; }
-
-.icnBul_1 > dd:before, .icnBul_1 > li:before { left: -0.25rem; }
-
 /*** max-width: 961px 시작 ***/
 @media only screen and (max-width: 961px) {
     #view_contents_wrap {
@@ -48,3 +43,13 @@
 
     }/** #view_contents_wrap 끝 **/
 } /*** max-width: 767px 끝 / 위의 #view_contents_wrap 괄호까지 반드시 유지 ***/
+
+
+.icnBul_1 dd:before, .icnBul_1 li:before, .icnBul_2 dd:before, .icnBul_2 li:before, .icnBul_3 dd:before,
+.icnBul_3 li:before, .icnBul_4 dd:before, .icnBul_4 li:before, .icnBul_5 dd:before, .icnBul_5 li:before { position: relative; }
+
+.icnBul_1 > dd:before, .icnBul_1 > li:before { left: -0.25rem; }
+
+.artTopDesc { margin: 0 0; }
+
+.artTopDesc p.desc { margin: 0 0; padding: 3rem 2.625rem 0; border-inline: 1px solid #e2e4e3; word-break: keep-all; }
