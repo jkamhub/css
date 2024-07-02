@@ -4,8 +4,8 @@
 @media only screen and (max-width: 961px) {
     #view_contents_wrap {
 
+        .detailHeader p.desc { border: none; }
         #secDetailRead .newTemp.artTplDetail table *, #secDetailRead .tbDetailDiv * { font-size: 1rem !important; }
-
         #secDetailRead .tbDetailDiv *, #secDetailRead .newTemp.artTplDetail table *, #secDetailRead .artOther .ulList li,
         #secDetailRead .artTplDetail .listWrap dd .desc *, #secDetailRead .artTplDetail .listWrap li .desc *, #secDetailRead .dlList dd,
 		#secDetailRead .dlList dd *, #secDetailRead .dlList dd li, #secDetailRead .dlList dd li *, #secDetailRead .dlList dt,
