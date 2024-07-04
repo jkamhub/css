@@ -15,7 +15,8 @@ body { font-size: 16px; line-height: 1.5em; color: #333; font-weight: 400; lette
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, button, p, table, th, td {margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6 {font-size:100%; }
 ul, ol, li {list-style: none; }
-img {border:0; width:100%; }
+img {border:0; width:100%; } 
+.artTplDetail .titBul img {width: auto; } /* 19번 라인 JK 템플릿 보완 코드 */
 a, a:link, a:active, a:visited, a:hover {font-size: 16px; color:#111aff; text-decoration: none; }
 table {border-collapse: collapse; border-spacing: 0; }
 
