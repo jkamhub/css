@@ -1,0 +1,2085 @@
+@charset "utf-8";* { font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif !important; }
+@font-face { font-family: Pretendard; font-weight: 400; font-display: swap; src: local("Pretendard Regular"), url(https://i.jobkorea.kr/content/webfont/pretendard/woff2-subset/Pretendard-Regular.subset.woff2) format("woff2"), url(https://i.jobkorea.kr/content/webfont/pretendard/woff-subset/Pretendard-Regular.subset.woff) format("woff"); } 
+@font-face { font-family: Pretendard; font-weight: 600; font-display: swap; src: local("Pretendard SemiBold"), url(https://i.jobkorea.kr/content/webfont/pretendard/woff2-subset/Pretendard-SemiBold.subset.woff2) format("woff2"), url(https://i.jobkorea.kr/content/webfont/pretendard/woff-subset/Pretendard-SemiBold.subset.woff) format("woff"); } 
+@font-face { font-family: Pretendard; font-weight: 700; font-display: swap; src: local("Pretendard Bold"), url(https://i.jobkorea.kr/content/webfont/pretendard/woff2-subset/Pretendard-Bold.subset.woff2) format("woff2"), url(https://i.jobkorea.kr/content/webfont/pretendard/woff-subset/Pretendard-Bold.subset.woff) format("woff"); } 
+
+.clear:after, .detBtnDown:after, .detIcnA:after, .detIcnB:before, .detIcnM:after, .detIcnM:before, .titBulA > span:after { content: ""; }
+* { word-break: break-all; box-sizing: border-box; } 
+body, button, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, p, table, td, th, ul { margin: 0; padding: 0; } 
+#secDetailRead .va, .detBtn, .detailHeader .header, .detailType_2 .detailHeader .visual, button { vertical-align: middle; } 
+.artTplDetail, .tbList .tbRow { table-layout: fixed; } 
+table, td, th { font-size: inherit; } 
+h1, h2, h3, h4, h5, h6 { font-weight: 400; font-size: 100%; } 
+table { border-collapse: collapse; border-spacing: 0; empty-cells: show; border: 0; } 
+li { list-style: none; } 
+caption, em { font-weight: 400; font-style: normal; } 
+hr { display: none; } 
+button { overflow: visible; font-size: inherit; border: 0; background: 0 0; cursor: pointer; } 
+button::-moz-focus-inner { padding: 0; border: 0; } 
+.clear { zoom: 1; } 
+.clear:after { display: block; height: 0; clear: both; } 
+
+a, a:link { color: #39f; text-decoration: none; } 
+a:visited { color: #609; } 
+
+.detBtn, .detBtnDown:after, .titBulA > span, .titBulA > span:after { display: inline-block; } 
+.blind, .skip, legend { position: absolute; top: -5000em; width: 0; height: 0; overflow: hidden; line-height: 0; font-size: 0; } 
+
+#container, #wrap { width: 100%; margin: 0 auto; position: relative; } 
+#container { max-width: 960px; z-index: 800; } 
+#wrap { text-align: left; z-index: 900; } 
+
+#secDetailRead { font-size: 16px; letter-spacing: 0px; color: #333; -webkit-text-size-adjust: none; } 
+.detBtn, .detBtnApply, .detBtnGray, .hd_2 { font-weight: 700; } 
+.detBtn span, .detBtnGray span { color: #fff; } 
+.detIcn, .detIcnA:after, .detIcnB:before, .detIcnM:after, .detIcnM:before { display: inline-block; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/sp_read_detail.png)
+ no-repeat; vertical-align: middle; line-height: normal; } 
+.btnWrap + .btnWrap { margin-top: 14px; } 
+.detBtn { height: 55px; padding: 15px 26px 19px; } 
+.detBtn + .detBtn { margin-left: 20px; } 
+.detBtnDown:after { width: 22px; height: 15px; margin: 0 0 0 7px; background-position: -60px 0; } 
+.titBulA > span { position: relative; height: 34px; margin-top: 1px; vertical-align: top; } 
+.titBulA > span:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/sp_tit_bul.png)
+ no-repeat; vertical-align: middle; line-height: normal; z-index: 1; } 
+.titBul_1 > span { width: 24px; height: 14px; margin-top: 10px; } 
+.titBul_1 > span:after { background-position: 0 -10px; } 
+.titBul_2 > span { width: 30px; height: 19px; margin-top: 8px; } 
+.titBul_2 > span:after { background-position: -40px -8px; } 
+.titBul_3 > span { height: 20px; margin-top: 7px; } 
+.titBul_3 > span:after { background-position: -90px -7px; } 
+.titBul_3 > span > span { display: block; width: 22px; height: 10px; } 
+.titBul_4 > span { width: 25px; height: 16px; margin-top: 8px; } 
+.titBul_4 > span:after { background-position: -130px -8px; } 
+.titBul_5 > span { width: 14px; height: 17px; margin-top: 9px; } 
+.titBul_5 > span:after { background-position: -170px -8px; } 
+#secDetailRead .br, .detBtnGray { display: block; } 
+.hd_2, .hd_3 { margin-bottom: 18px; } 
+.detBtnGray { font-size: 13px; letter-spacing: 0px; line-height: normal; padding: 6px 8px 7px; background: #949698; text-align: center; } 
+.hd_1 { font-size: 40px; letter-spacing: -1px; line-height: 55px; } 
+.hd_2 { font-size: 32px; letter-spacing: -1px; } 
+.hd_3 { font-size: 26px; letter-spacing: -0.5px; display: table; } 
+#secDetailRead .lt { text-align: left; } 
+#secDetailRead .ct { text-align: center; }
+#secDetailRead .rt { text-align: right; } 
+#secDetailRead .mg { margin: 0; } 
+#secDetailRead .mt_0 { margin-top: 0; } 
+#secDetailRead .mt_1 { margin-top: 1px; } 
+#secDetailRead .mt_2 { margin-top: 2px; } 
+#secDetailRead .mt_3 { margin-top: 3px; } 
+#secDetailRead .mt_4 { margin-top: 4px; } 
+#secDetailRead .mt_5 { margin-top: 5px; } 
+#secDetailRead .mt_6 { margin-top: 6px; } 
+#secDetailRead .mt_7 { margin-top: 7px; } 
+#secDetailRead .mt_8 { margin-top: 8px; } 
+#secDetailRead .mt_9 { margin-top: 9px; } 
+#secDetailRead .mt_10 { margin-top: 10px; } 
+#secDetailRead .mt_11 { margin-top: 11px; } 
+#secDetailRead .mt_12 { margin-top: 12px; } 
+#secDetailRead .mt_13 { margin-top: 13px; } 
+#secDetailRead .mt_14 { margin-top: 14px; } 
+#secDetailRead .mt_15 { margin-top: 15px; } 
+#secDetailRead .mt_16 { margin-top: 16px; } 
+#secDetailRead .mt_17 { margin-top: 17px; } 
+#secDetailRead .mt_18 { margin-top: 18px; } 
+#secDetailRead .mt_19 { margin-top: 19px; } 
+#secDetailRead .mt_20 { margin-top: 20px; } 
+#secDetailRead .mt_21 { margin-top: 21px; } 
+#secDetailRead .mt_22 { margin-top: 22px; } 
+#secDetailRead .mt_23 { margin-top: 23px; } 
+#secDetailRead .mt_24 { margin-top: 24px; } 
+#secDetailRead .mt_25 { margin-top: 25px; } 
+#secDetailRead .mt_26 { margin-top: 26px; } 
+#secDetailRead .mt_27 { margin-top: 27px; } 
+#secDetailRead .mt_28 { margin-top: 28px; } 
+#secDetailRead .mt_29 { margin-top: 29px; } 
+#secDetailRead .mt_30 { margin-top: 30px; } 
+#secDetailRead .mt_31 { margin-top: 31px; } 
+#secDetailRead .mt_32 { margin-top: 32px; } 
+#secDetailRead .mt_33 { margin-top: 33px; } 
+#secDetailRead .mt_34 { margin-top: 34px; } 
+#secDetailRead .mt_35 { margin-top: 35px; } 
+#secDetailRead .mt_36 { margin-top: 36px; } 
+#secDetailRead .mt_37 { margin-top: 37px; } 
+#secDetailRead .mt_38 { margin-top: 38px; } 
+#secDetailRead .mt_39 { margin-top: 39px; } 
+#secDetailRead .mt_40 { margin-top: 40px; } 
+#secDetailRead .mt_41 { margin-top: 41px; } 
+#secDetailRead .mt_42 { margin-top: 42px; } 
+#secDetailRead .mt_43 { margin-top: 43px; } 
+#secDetailRead .mt_44 { margin-top: 44px; } 
+#secDetailRead .mt_45 { margin-top: 45px; } 
+#secDetailRead .mt_46 { margin-top: 46px; } 
+#secDetailRead .mt_47 { margin-top: 47px; } 
+#secDetailRead .mt_48 { margin-top: 48px; } 
+#secDetailRead .mt_49 { margin-top: 49px; } 
+#secDetailRead .mt_50 { margin-top: 50px; } 
+#secDetailRead .ml_0 { margin-left: 0; } 
+#secDetailRead .ml_1 { margin-left: 1px; } 
+#secDetailRead .ml_2 { margin-left: 2px; } 
+#secDetailRead .ml_3 { margin-left: 3px; } 
+#secDetailRead .ml_4 { margin-left: 4px; } 
+#secDetailRead .ml_5 { margin-left: 5px; } 
+#secDetailRead .ml_6 { margin-left: 6px; } 
+#secDetailRead .ml_7 { margin-left: 7px; } 
+#secDetailRead .ml_8 { margin-left: 8px; } 
+#secDetailRead .ml_9 { margin-left: 9px; } 
+#secDetailRead .ml_10 { margin-left: 10px; } 
+#secDetailRead .ml_11 { margin-left: 11px; } 
+#secDetailRead .ml_12 { margin-left: 12px; } 
+#secDetailRead .ml_13 { margin-left: 13px; } 
+#secDetailRead .ml_14 { margin-left: 14px; } 
+#secDetailRead .ml_15 { margin-left: 15px; } 
+#secDetailRead .ml_16 { margin-left: 16px; } 
+#secDetailRead .ml_17 { margin-left: 17px; } 
+#secDetailRead .ml_18 { margin-left: 18px; } 
+#secDetailRead .ml_19 { margin-left: 19px; } 
+#secDetailRead .ml_20 { margin-left: 20px; } 
+#secDetailRead .ml_21 { margin-left: 21px; } 
+#secDetailRead .ml_22 { margin-left: 22px; } 
+#secDetailRead .ml_23 { margin-left: 23px; } 
+#secDetailRead .ml_24 { margin-left: 24px; } 
+#secDetailRead .ml_25 { margin-left: 25px; } 
+#secDetailRead .ml_26 { margin-left: 26px; } 
+#secDetailRead .ml_27 { margin-left: 27px; } 
+#secDetailRead .ml_28 { margin-left: 28px; } 
+#secDetailRead .ml_29 { margin-left: 29px; } 
+#secDetailRead .ml_30 { margin-left: 30px; } 
+#secDetailRead .ml_31 { margin-left: 31px; } 
+#secDetailRead .ml_32 { margin-left: 32px; } 
+#secDetailRead .ml_33 { margin-left: 33px; } 
+#secDetailRead .ml_34 { margin-left: 34px; } 
+#secDetailRead .ml_35 { margin-left: 35px; } 
+#secDetailRead .ml_36 { margin-left: 36px; } 
+#secDetailRead .ml_37 { margin-left: 37px; } 
+#secDetailRead .ml_38 { margin-left: 38px; } 
+#secDetailRead .ml_39 { margin-left: 39px; } 
+#secDetailRead .ml_40 { margin-left: 40px; } 
+#secDetailRead .ml_41 { margin-left: 41px; } 
+#secDetailRead .ml_42 { margin-left: 42px; } 
+#secDetailRead .ml_43 { margin-left: 43px; } 
+#secDetailRead .ml_44 { margin-left: 44px; } 
+#secDetailRead .ml_45 { margin-left: 45px; } 
+#secDetailRead .ml_46 { margin-left: 46px; } 
+#secDetailRead .ml_47 { margin-left: 47px; } 
+#secDetailRead .ml_48 { margin-left: 48px; } 
+#secDetailRead .ml_49 { margin-left: 49px; } 
+#secDetailRead .ml_50 { margin-left: 50px; } 
+#secDetailRead .mr_0 { margin-right: 0; } 
+#secDetailRead .mr_1 { margin-right: 1px; } 
+#secDetailRead .mr_2 { margin-right: 2px; } 
+#secDetailRead .mr_3 { margin-right: 3px; } 
+#secDetailRead .mr_4 { margin-right: 4px; } 
+#secDetailRead .mr_5 { margin-right: 5px; } 
+#secDetailRead .mr_6 { margin-right: 6px; } 
+#secDetailRead .mr_7 { margin-right: 7px; } 
+#secDetailRead .mr_8 { margin-right: 8px; } 
+#secDetailRead .mr_9 { margin-right: 9px; } 
+#secDetailRead .mr_10 { margin-right: 10px; } 
+#secDetailRead .mr_11 { margin-right: 11px; } 
+#secDetailRead .mr_12 { margin-right: 12px; } 
+#secDetailRead .mr_13 { margin-right: 13px; } 
+#secDetailRead .mr_14 { margin-right: 14px; } 
+#secDetailRead .mr_15 { margin-right: 15px; } 
+#secDetailRead .mr_16 { margin-right: 16px; } 
+#secDetailRead .mr_17 { margin-right: 17px; } 
+#secDetailRead .mr_18 { margin-right: 18px; } 
+#secDetailRead .mr_19 { margin-right: 19px; } 
+#secDetailRead .mr_20 { margin-right: 20px; } 
+#secDetailRead .mr_21 { margin-right: 21px; } 
+#secDetailRead .mr_22 { margin-right: 22px; } 
+#secDetailRead .mr_23 { margin-right: 23px; } 
+#secDetailRead .mr_24 { margin-right: 24px; } 
+#secDetailRead .mr_25 { margin-right: 25px; } 
+#secDetailRead .mr_26 { margin-right: 26px; } 
+#secDetailRead .mr_27 { margin-right: 27px; } 
+#secDetailRead .mr_28 { margin-right: 28px; } 
+#secDetailRead .mr_29 { margin-right: 29px; } 
+#secDetailRead .mr_30 { margin-right: 30px; } 
+#secDetailRead .mr_31 { margin-right: 31px; } 
+#secDetailRead .mr_32 { margin-right: 32px; } 
+#secDetailRead .mr_33 { margin-right: 33px; } 
+#secDetailRead .mr_34 { margin-right: 34px; } 
+#secDetailRead .mr_35 { margin-right: 35px; } 
+#secDetailRead .mr_36 { margin-right: 36px; } 
+#secDetailRead .mr_37 { margin-right: 37px; } 
+#secDetailRead .mr_38 { margin-right: 38px; } 
+#secDetailRead .mr_39 { margin-right: 39px; } 
+#secDetailRead .mr_40 { margin-right: 40px; } 
+#secDetailRead .mr_41 { margin-right: 41px; } 
+#secDetailRead .mr_42 { margin-right: 42px; } 
+#secDetailRead .mr_43 { margin-right: 43px; } 
+#secDetailRead .mr_44 { margin-right: 44px; } 
+#secDetailRead .mr_45 { margin-right: 45px; } 
+#secDetailRead .mr_46 { margin-right: 46px; } 
+#secDetailRead .mr_47 { margin-right: 47px; } 
+#secDetailRead .mr_48 { margin-right: 48px; } 
+#secDetailRead .mr_49 { margin-right: 49px; } 
+#secDetailRead .mr_50 { margin-right: 50px; } 
+#secDetailRead .mb_0 { margin-bottom: 0; } 
+#secDetailRead .mb_1 { margin-bottom: 1px; } 
+#secDetailRead .mb_2 { margin-bottom: 2px; } 
+#secDetailRead .mb_3 { margin-bottom: 3px; } 
+#secDetailRead .mb_4 { margin-bottom: 4px; } 
+#secDetailRead .mb_5 { margin-bottom: 5px; } 
+#secDetailRead .mb_6 { margin-bottom: 6px; } 
+#secDetailRead .mb_7 { margin-bottom: 7px; } 
+#secDetailRead .mb_8 { margin-bottom: 8px; } 
+#secDetailRead .mb_9 { margin-bottom: 9px; } 
+#secDetailRead .mb_10 { margin-bottom: 10px; } 
+#secDetailRead .mb_11 { margin-bottom: 11px; } 
+#secDetailRead .mb_12 { margin-bottom: 12px; } 
+#secDetailRead .mb_13 { margin-bottom: 13px; } 
+#secDetailRead .mb_14 { margin-bottom: 14px; } 
+#secDetailRead .mb_15 { margin-bottom: 15px; } 
+#secDetailRead .mb_16 { margin-bottom: 16px; } 
+#secDetailRead .mb_17 { margin-bottom: 17px; } 
+#secDetailRead .mb_18 { margin-bottom: 18px; } 
+#secDetailRead .mb_19 { margin-bottom: 19px; } 
+#secDetailRead .mb_20 { margin-bottom: 20px; } 
+#secDetailRead .mb_21 { margin-bottom: 21px; } 
+#secDetailRead .mb_22 { margin-bottom: 22px; } 
+#secDetailRead .mb_23 { margin-bottom: 23px; } 
+#secDetailRead .mb_24 { margin-bottom: 24px; } 
+#secDetailRead .mb_25 { margin-bottom: 25px; } 
+#secDetailRead .mb_26 { margin-bottom: 26px; } 
+#secDetailRead .mb_27 { margin-bottom: 27px; } 
+#secDetailRead .mb_28 { margin-bottom: 28px; } 
+#secDetailRead .mb_29 { margin-bottom: 29px; } 
+#secDetailRead .mb_30 { margin-bottom: 30px; } 
+#secDetailRead .mb_31 { margin-bottom: 31px; } 
+#secDetailRead .mb_32 { margin-bottom: 32px; } 
+#secDetailRead .mb_33 { margin-bottom: 33px; } 
+#secDetailRead .mb_34 { margin-bottom: 34px; } 
+#secDetailRead .mb_35 { margin-bottom: 35px; } 
+#secDetailRead .mb_36 { margin-bottom: 36px; } 
+#secDetailRead .mb_37 { margin-bottom: 37px; } 
+#secDetailRead .mb_38 { margin-bottom: 38px; } 
+#secDetailRead .mb_39 { margin-bottom: 39px; } 
+#secDetailRead .mb_40 { margin-bottom: 40px; } 
+#secDetailRead .mb_41 { margin-bottom: 41px; } 
+#secDetailRead .mb_42 { margin-bottom: 42px; } 
+#secDetailRead .mb_43 { margin-bottom: 43px; } 
+#secDetailRead .mb_44 { margin-bottom: 44px; } 
+#secDetailRead .mb_45 { margin-bottom: 45px; } 
+#secDetailRead .mb_46 { margin-bottom: 46px; } 
+#secDetailRead .mb_47 { margin-bottom: 47px; } 
+#secDetailRead .mb_48 { margin-bottom: 48px; } 
+#secDetailRead .mb_49 { margin-bottom: 49px; } 
+#secDetailRead .mb_50 { margin-bottom: 50px; } 
+#secDetailRead .pd { padding: 0; } 
+#secDetailRead .pt_0 { padding-top: 0; } 
+#secDetailRead .pt_1 { padding-top: 1px; } 
+#secDetailRead .pt_2 { padding-top: 2px; } 
+#secDetailRead .pt_3 { padding-top: 3px; } 
+#secDetailRead .pt_4 { padding-top: 4px; } 
+#secDetailRead .pt_5 { padding-top: 5px; } 
+#secDetailRead .pt_6 { padding-top: 6px; } 
+#secDetailRead .pt_7 { padding-top: 7px; } 
+#secDetailRead .pt_8 { padding-top: 8px; } 
+#secDetailRead .pt_9 { padding-top: 9px; } 
+#secDetailRead .pt_10 { padding-top: 10px; } 
+#secDetailRead .pt_11 { padding-top: 11px; } 
+#secDetailRead .pt_12 { padding-top: 12px; } 
+#secDetailRead .pt_13 { padding-top: 13px; } 
+#secDetailRead .pt_14 { padding-top: 14px; } 
+#secDetailRead .pt_15 { padding-top: 15px; } 
+#secDetailRead .pt_16 { padding-top: 16px; } 
+#secDetailRead .pt_17 { padding-top: 17px; } 
+#secDetailRead .pt_18 { padding-top: 18px; } 
+#secDetailRead .pt_19 { padding-top: 19px; } 
+#secDetailRead .pt_20 { padding-top: 20px; } 
+#secDetailRead .pt_21 { padding-top: 21px; } 
+#secDetailRead .pt_22 { padding-top: 22px; } 
+#secDetailRead .pt_23 { padding-top: 23px; } 
+#secDetailRead .pt_24 { padding-top: 24px; } 
+#secDetailRead .pt_25 { padding-top: 25px; } 
+#secDetailRead .pt_26 { padding-top: 26px; } 
+#secDetailRead .pt_27 { padding-top: 27px; } 
+#secDetailRead .pt_28 { padding-top: 28px; } 
+#secDetailRead .pt_29 { padding-top: 29px; } 
+#secDetailRead .pt_30 { padding-top: 30px; } 
+#secDetailRead .pt_31 { padding-top: 31px; } 
+#secDetailRead .pt_32 { padding-top: 32px; } 
+#secDetailRead .pt_33 { padding-top: 33px; } 
+#secDetailRead .pt_34 { padding-top: 34px; } 
+#secDetailRead .pt_35 { padding-top: 35px; } 
+#secDetailRead .pt_36 { padding-top: 36px; } 
+#secDetailRead .pt_37 { padding-top: 37px; } 
+#secDetailRead .pt_38 { padding-top: 38px; } 
+#secDetailRead .pt_39 { padding-top: 39px; } 
+#secDetailRead .pt_40 { padding-top: 40px; } 
+#secDetailRead .pt_41 { padding-top: 41px; } 
+#secDetailRead .pt_42 { padding-top: 42px; } 
+#secDetailRead .pt_43 { padding-top: 43px; } 
+#secDetailRead .pt_44 { padding-top: 44px; } 
+#secDetailRead .pt_45 { padding-top: 45px; } 
+#secDetailRead .pt_46 { padding-top: 46px; } 
+#secDetailRead .pt_47 { padding-top: 47px; } 
+#secDetailRead .pt_48 { padding-top: 48px; } 
+#secDetailRead .pt_49 { padding-top: 49px; } 
+#secDetailRead .pt_50 { padding-top: 50px; } 
+#secDetailRead .pl_0 { padding-left: 0; } 
+#secDetailRead .pl_1 { padding-left: 1px; } 
+#secDetailRead .pl_2 { padding-left: 2px; } 
+#secDetailRead .pl_3 { padding-left: 3px; } 
+#secDetailRead .pl_4 { padding-left: 4px; } 
+#secDetailRead .pl_5 { padding-left: 5px; } 
+#secDetailRead .pl_6 { padding-left: 6px; } 
+#secDetailRead .pl_7 { padding-left: 7px; } 
+#secDetailRead .pl_8 { padding-left: 8px; } 
+#secDetailRead .pl_9 { padding-left: 9px; } 
+#secDetailRead .pl_10 { padding-left: 10px; } 
+#secDetailRead .pl_11 { padding-left: 11px; } 
+#secDetailRead .pl_12 { padding-left: 12px; } 
+#secDetailRead .pl_13 { padding-left: 13px; } 
+#secDetailRead .pl_14 { padding-left: 14px; } 
+#secDetailRead .pl_15 { padding-left: 15px; } 
+#secDetailRead .pl_16 { padding-left: 16px; } 
+#secDetailRead .pl_17 { padding-left: 17px; } 
+#secDetailRead .pl_18 { padding-left: 18px; } 
+#secDetailRead .pl_19 { padding-left: 19px; } 
+#secDetailRead .pl_20 { padding-left: 20px; } 
+#secDetailRead .pl_21 { padding-left: 21px; } 
+#secDetailRead .pl_22 { padding-left: 22px; } 
+#secDetailRead .pl_23 { padding-left: 23px; } 
+#secDetailRead .pl_24 { padding-left: 24px; } 
+#secDetailRead .pl_25 { padding-left: 25px; } 
+#secDetailRead .pl_26 { padding-left: 26px; } 
+#secDetailRead .pl_27 { padding-left: 27px; } 
+#secDetailRead .pl_28 { padding-left: 28px; } 
+#secDetailRead .pl_29 { padding-left: 29px; } 
+#secDetailRead .pl_30 { padding-left: 30px; } 
+#secDetailRead .pl_31 { padding-left: 31px; } 
+#secDetailRead .pl_32 { padding-left: 32px; } 
+#secDetailRead .pl_33 { padding-left: 33px; } 
+#secDetailRead .pl_34 { padding-left: 34px; } 
+#secDetailRead .pl_35 { padding-left: 35px; } 
+#secDetailRead .pl_36 { padding-left: 36px; } 
+#secDetailRead .pl_37 { padding-left: 37px; } 
+#secDetailRead .pl_38 { padding-left: 38px; } 
+#secDetailRead .pl_39 { padding-left: 39px; } 
+#secDetailRead .pl_40 { padding-left: 40px; } 
+#secDetailRead .pl_41 { padding-left: 41px; } 
+#secDetailRead .pl_42 { padding-left: 42px; } 
+#secDetailRead .pl_43 { padding-left: 43px; } 
+#secDetailRead .pl_44 { padding-left: 44px; } 
+#secDetailRead .pl_45 { padding-left: 45px; } 
+#secDetailRead .pl_46 { padding-left: 46px; } 
+#secDetailRead .pl_47 { padding-left: 47px; } 
+#secDetailRead .pl_48 { padding-left: 48px; } 
+#secDetailRead .pl_49 { padding-left: 49px; } 
+#secDetailRead .pl_50 { padding-left: 50px; } 
+#secDetailRead .pb_0 { padding-bottom: 0; } 
+#secDetailRead .pb_1 { padding-bottom: 1px; } 
+#secDetailRead .pb_2 { padding-bottom: 2px; } 
+#secDetailRead .pb_3 { padding-bottom: 3px; } 
+#secDetailRead .pb_4 { padding-bottom: 4px; } 
+#secDetailRead .pb_5 { padding-bottom: 5px; } 
+#secDetailRead .pb_6 { padding-bottom: 6px; } 
+#secDetailRead .pb_7 { padding-bottom: 7px; } 
+#secDetailRead .pb_8 { padding-bottom: 8px; } 
+#secDetailRead .pb_9 { padding-bottom: 9px; } 
+#secDetailRead .pb_10 { padding-bottom: 10px; } 
+#secDetailRead .pb_11 { padding-bottom: 11px; } 
+#secDetailRead .pb_12 { padding-bottom: 12px; } 
+#secDetailRead .pb_13 { padding-bottom: 13px; } 
+#secDetailRead .pb_14 { padding-bottom: 14px; } 
+#secDetailRead .pb_15 { padding-bottom: 15px; } 
+#secDetailRead .pb_16 { padding-bottom: 16px; } 
+#secDetailRead .pb_17 { padding-bottom: 17px; } 
+#secDetailRead .pb_18 { padding-bottom: 18px; } 
+#secDetailRead .pb_19 { padding-bottom: 19px; } 
+#secDetailRead .pb_20 { padding-bottom: 20px; } 
+#secDetailRead .pb_21 { padding-bottom: 21px; } 
+#secDetailRead .pb_22 { padding-bottom: 22px; } 
+#secDetailRead .pb_23 { padding-bottom: 23px; } 
+#secDetailRead .pb_24 { padding-bottom: 24px; } 
+#secDetailRead .pb_25 { padding-bottom: 25px; } 
+#secDetailRead .pb_26 { padding-bottom: 26px; } 
+#secDetailRead .pb_27 { padding-bottom: 27px; } 
+#secDetailRead .pb_28 { padding-bottom: 28px; } 
+#secDetailRead .pb_29 { padding-bottom: 29px; } 
+#secDetailRead .pb_30 { padding-bottom: 30px; } 
+#secDetailRead .pb_31 { padding-bottom: 31px; } 
+#secDetailRead .pb_32 { padding-bottom: 32px; } 
+#secDetailRead .pb_33 { padding-bottom: 33px; } 
+#secDetailRead .pb_34 { padding-bottom: 34px; } 
+#secDetailRead .pb_35 { padding-bottom: 35px; } 
+#secDetailRead .pb_36 { padding-bottom: 36px; } 
+#secDetailRead .pb_37 { padding-bottom: 37px; } 
+#secDetailRead .pb_38 { padding-bottom: 38px; } 
+#secDetailRead .pb_39 { padding-bottom: 39px; } 
+#secDetailRead .pb_40 { padding-bottom: 40px; } 
+#secDetailRead .pb_41 { padding-bottom: 41px; } 
+#secDetailRead .pb_42 { padding-bottom: 42px; } 
+#secDetailRead .pb_43 { padding-bottom: 43px; } 
+#secDetailRead .pb_44 { padding-bottom: 44px; } 
+#secDetailRead .pb_45 { padding-bottom: 45px; } 
+#secDetailRead .pb_46 { padding-bottom: 46px; } 
+#secDetailRead .pb_47 { padding-bottom: 47px; } 
+#secDetailRead .pb_48 { padding-bottom: 48px; } 
+#secDetailRead .pb_49 { padding-bottom: 49px; } 
+#secDetailRead .pb_50 { padding-bottom: 50px; } 
+#secDetailRead .pr_0 { padding-right: 0; } 
+#secDetailRead .pr_1 { padding-right: 1px; } 
+#secDetailRead .pr_2 { padding-right: 2px; } 
+#secDetailRead .pr_3 { padding-right: 3px; } 
+#secDetailRead .pr_4 { padding-right: 4px; } 
+#secDetailRead .pr_5 { padding-right: 5px; } 
+#secDetailRead .pr_6 { padding-right: 6px; } 
+#secDetailRead .pr_7 { padding-right: 7px; } 
+#secDetailRead .pr_8 { padding-right: 8px; } 
+#secDetailRead .pr_9 { padding-right: 9px; } 
+#secDetailRead .pr_10 { padding-right: 10px; } 
+#secDetailRead .pr_11 { padding-right: 11px; } 
+#secDetailRead .pr_12 { padding-right: 12px; } 
+#secDetailRead .pr_13 { padding-right: 13px; } 
+#secDetailRead .pr_14 { padding-right: 14px; } 
+#secDetailRead .pr_15 { padding-right: 15px; } 
+#secDetailRead .pr_16 { padding-right: 16px; } 
+#secDetailRead .pr_17 { padding-right: 17px; } 
+#secDetailRead .pr_18 { padding-right: 18px; } 
+#secDetailRead .pr_19 { padding-right: 19px; } 
+#secDetailRead .pr_20 { padding-right: 20px; } 
+#secDetailRead .pr_21 { padding-right: 21px; } 
+#secDetailRead .pr_22 { padding-right: 22px; } 
+#secDetailRead .pr_23 { padding-right: 23px; } 
+#secDetailRead .pr_24 { padding-right: 24px; } 
+#secDetailRead .pr_25 { padding-right: 25px; } 
+#secDetailRead .pr_26 { padding-right: 26px; } 
+#secDetailRead .pr_27 { padding-right: 27px; } 
+#secDetailRead .pr_28 { padding-right: 28px; } 
+#secDetailRead .pr_29 { padding-right: 29px; } 
+#secDetailRead .pr_30 { padding-right: 30px; } 
+#secDetailRead .pr_31 { padding-right: 31px; } 
+#secDetailRead .pr_32 { padding-right: 32px; } 
+#secDetailRead .pr_33 { padding-right: 33px; } 
+#secDetailRead .pr_34 { padding-right: 34px; } 
+#secDetailRead .pr_35 { padding-right: 35px; } 
+#secDetailRead .pr_36 { padding-right: 36px; } 
+#secDetailRead .pr_37 { padding-right: 37px; } 
+#secDetailRead .pr_38 { padding-right: 38px; } 
+#secDetailRead .pr_39 { padding-right: 39px; } 
+#secDetailRead .pr_40 { padding-right: 40px; } 
+#secDetailRead .pr_41 { padding-right: 41px; } 
+#secDetailRead .pr_42 { padding-right: 42px; } 
+#secDetailRead .pr_43 { padding-right: 43px; } 
+#secDetailRead .pr_44 { padding-right: 44px; } 
+#secDetailRead .pr_45 { padding-right: 45px; } 
+#secDetailRead .pr_46 { padding-right: 46px; } 
+#secDetailRead .pr_47 { padding-right: 47px; } 
+#secDetailRead .pr_48 { padding-right: 48px; } 
+#secDetailRead .pr_49 { padding-right: 49px; } 
+#secDetailRead .pr_50 { padding-right: 50px; } 
+.detailHeader { position: relative; display: table; width: 100%; } 
+.detailHeader .visual { font-size: 0; line-height: 0; border: 1px solid #e2e4e3; border-bottom: 0; } 
+.detailHeader .visual img { width: 100%; } 
+.detailHeader .header { position: relative; display: table-cell; padding-left: 130px; z-index: 2; } 
+
+.titleType .artTplDetail { display: table; } 
+.titleType .artTplInner { display: table-cell; width: 100%; } 
+.secDetailWrap { padding: 42px 50px 68px; border: 1px solid #e2e4e3; border-top: 0; } 
+.artTopDesc { margin: -5px 0 48px; } 
+.artTopDesc > .desc { font-size: 17px; letter-spacing: 0px; margin: 20px 0 0; line-height: 29px; } 
+.artTopDesc .dlList,
+.artTopDesc .olList,
+.artTopDesc .ulList { font-size: 16px; color: #333; letter-spacing: 0px; margin: 20px 0 0; } 
+.artTopDesc .dlList dd .desc,
+.artTopDesc .olList li .desc,
+.artTopDesc .ulList li .desc { position: relative; font-size: 16px; letter-spacing: 0px; color: #333; padding-left: 16px; } 
+.artTopDesc .dlList dd .desc.star,
+.artTopDesc .olList li .desc.star,
+.artTopDesc .ulList li .desc.star { padding-left: 16px; } 
+.artTopDesc .dlList dd .desc:before,
+.artTopDesc .olList li .desc:before,
+.artTopDesc .ulList li .desc:before { content: "※"; position: absolute; left: 0; top: 0; } 
+.artTopDesc .dlList dd .desc.star:before,
+.artTopDesc .olList li .desc.star:before,
+.artTopDesc .ulList li .desc.star:before { content: "*"; top: 2px; } 
+.artTopDesc .olList + .olList,
+.artTopDesc .ulList + .ulList { padding: 0; } 
+.artTplDetail + .artTplDetail { margin-top: 52px; } 
+.artTplDetail .titBul,
+.artTplDetail .titBulA { display: table-cell; font-size: 26px; letter-spacing: -0.5px; padding-right: 7px; vertical-align: top; } 
+.artTplDetail .titBulA { padding-right: 0; } 
+.artTplDetail .titBul img { max-width: initial; height: 24px; margin-top: 5px; } 
+.artTplDetail .hd_3 .tit { display: table-cell; color: #333; } 
+.artTplDetail .listWrap .desc,
+.tbDetailDiv .desc,
+.tbDetailWrap tbody td .desc { position: relative; font-size: inherit; letter-spacing: 0px; color: #333; padding-left: 16px; margin-top: 9px; word-break: break-all; box-sizing: border-box; } 
+.artTplDetail .listWrap .desc.star,
+.tbDetailDiv .desc.star,
+.tbDetailWrap tbody td .desc.star { padding-left: 16px; } 
+.artTplDetail .listWrap .desc:before,
+.tbDetailDiv .desc:before,
+.tbDetailWrap tbody td .desc:before { content: "※"; position: absolute; left: 0; top: 0; } 
+.artTplDetail .listWrap .desc.star:before,
+.tbDetailDiv .desc.star:before,
+.tbDetailWrap tbody td .desc.star:before { content: "*"; top: 2px; } 
+.artTplDetail .listWrap dd .desc,
+.artTplDetail .listWrap li .desc,
+.tbDetailDiv .desc,
+.tbDetailWrap tbody td .desc { font-size: inherit; letter-spacing: 0px; color: #333; margin-top: 0; } 
+.artTplDetail .listWrap dd,
+.artTplDetail .listWrap li { position: relative; color: #333; } 
+.tbDetailWrap { border-top: 2px solid #555; border-bottom: 2px solid #d0d4d9; margin-top: -5px; } 
+.tbDetailWrap table { width: 100%; line-height: 23px; table-layout: fixed; background: #fff; } 
+.tbDetailWrap th { font-weight: 400; height: 55px; padding: 5px 20px 7px; line-height: 20px; } 
+.tbDetailWrap tbody tr { border-top: 1px solid #d0d4d9; } 
+.tbDetailWrap tbody td { padding: 19px 20px 26px; vertical-align: top; } 
+.tbDetailWrap .tbDetailWrap { font-size: 14px; letter-spacing: 0px; margin: 0; border-bottom: 1px solid #959595; } 
+.tbDetailWrap .tbDetailWrap thead tr { border-top: 0; } 
+.tbDetailWrap .tbDetailWrap thead th { height: 40px; padding: 0 5px 3px; text-align: center; } 
+.tbDetailWrap .tbDetailWrap tbody td { padding: 12px 5px 15px; text-align: center; } 
+.tbDetailWrap .detBtnGray { margin-top: 8px; } 
+.tbDetailWrap td.cell_2,
+.tbDetailWrap td.cell_4,
+.tbDetailWrap td.cell_6,
+.tbDetailWrap td.cell_8,
+.tbDetailWrap th.cell_2,
+.tbDetailWrap th.cell_4,
+.tbDetailWrap th.cell_6,
+.tbDetailWrap th.cell_8 { background-color: #fbfbfb; } 
+.tbDetailType_2 th,
+.tbDetailType_2 th.cell_1,
+.tbDetailType_2 th.cell_2,
+.tbDetailType_2 th.cell_3,
+.tbDetailType_2 th.cell_4,
+.tbDetailType_2 th.cell_5,
+.tbDetailType_2 th.cell_6,
+.tbDetailType_2 th.cell_7,
+.tbDetailType_2 th.cell_8 { background-color: #adb0b5; } 
+.tbDetailWrap .trLine { border-top: 2px solid #555; } 
+.tbDetailType_2,
+.tbDetailType_2 tbody tr { border-top: 0; } 
+.tbDetailType_2 th { color: #fff; font-weight: 700; height: 50px; } 
+.tbDetailType_2 tbody tr + tr { border-top: 1px solid #d0d4d9; } 
+.tbDetailType_2 .dlList dd { color: #333; } 
+.tbDetailType_2 td.cell_2,
+.tbDetailType_2 td.cell_4,
+.tbDetailType_2 td.cell_6,
+.tbDetailType_2 td.cell_8 { background-color: #f2f3f5; } 
+.tbDetailType_2 .trLine { border-top: 1px solid #959595; } 
+.tbDetailType_3 td,
+.tbDetailType_3 th { border-top: 1px solid #e5e5e5; } 
+.tbDetailType_3 td:first-chid { border-left: 0; } 
+.tbDetailType_3 th { border-top: 0; } 
+.tbDetailType_3 td + td,
+.tbDetailType_3 th + th,
+.tbDetailType_3 tr + tr td.cell_2,
+.tbDetailType_3 tr + tr td.cell_3 { border-left: 1px solid #e5e5e5; } 
+.tbDetailType_3 td.cell_1,
+.tbDetailType_3 th.cell_1 { background-color: #fbfbfb; } 
+#secDetailRead .tbBgNone td,
+#secDetailRead .tbBgNone th,
+.tbDetailType_3 td.cell_2,
+.tbDetailType_3 td.cell_4,
+.tbDetailType_3 td.cell_6,
+.tbDetailType_3 td.cell_8,
+.tbDetailType_3 th.cell_2,
+.tbDetailType_3 th.cell_4,
+.tbDetailType_3 th.cell_6,
+.tbDetailType_3 th.cell_8 { background: 0 0; } 
+.tbDetailDiv { width: 100%; line-height: 26px; } 
+.tbDetailDiv .tbCol,
+.tbDetailDiv .tbRow { display: table; width: 100%; table-layout: fixed; } 
+.tbDetailDiv .tbRow { position: relative; border-top: 1px solid #e0e0e0; } 
+.tbDetailDiv .tbBody,
+.tbDetailDiv .tbCell,
+.tbDetailDiv .tbHead { display: table-cell; } 
+.tbDetailDiv .tbHead { font-size: 17px; letter-spacing: 0px; font-weight: 700; padding: 19px 0 20px; } 
+.tbDetailDiv .tbHead > span { position: relative; } 
+.tbDetailDiv .tbHead > span .bar { position: absolute; left: 0; display: block; width: 100%; border-top: 3px solid; } 
+.tbDetailDiv .tbBody { font-size: 15px; letter-spacing: 0px; padding-top: 19px; } 
+.tbDetailDiv .tbBody .tbTh { font-size: 15px; letter-spacing: 0px; color: #333; font-weight: 700; line-height: 23px; } 
+.dlList dd,
+.tbDetailDiv .dlList dd,
+.tbDetailDiv .dlList dt,
+.tbDetailDiv .tbCell { color: #666; } 
+.tbDetailDiv .tbCol + .tbCol { margin-top: 6px; } 
+.tbDetailDiv .dlList,
+.tbDetailDiv .olList,
+.tbDetailDiv .ulList { display: block; line-height: 26px; } 
+.tbDetailDiv .olList li + li,
+.tbDetailDiv .ulList li + li { margin-top: 2px; } 
+.tbDetailDiv .btnWrap { padding: 12px 0 5px; margin: 0; } 
+.tbDetailDiv .btnWrap + .btnWrap { padding: 5px 0; } 
+.tbDetailDiv img { max-width: 100%; margin-top: 10px; vertical-align: top; } 
+.tbDetailDiv .dlList + .dlList,
+.tbDetailDiv .dlList + .olList,
+.tbDetailDiv .dlList + .ulList,
+.tbDetailDiv .olList + .dlList,
+.tbDetailDiv .olList + .olList,
+.tbDetailDiv .tbList + .tbList,
+.tbDetailDiv .ulList + .dlList,
+.tbDetailDiv .ulList + .ulList { padding-top: 0; } 
+.tbDetailDiv_1 .tbRow + .tbRow { margin-top: 20px; } 
+.tbDetailDiv_1 .tbHead { width: 158px; } 
+.tbDetailDiv_1 .tbHead > span .bar { top: -22px; } 
+.tbDetailDiv_1 .tbBody .tbTh { width: 120px; padding: 0 15px 0 10px; } 
+.tbDetailDiv_1 .tbCell { width: 528px; } 
+.tbDetailDiv_2 .tbHead { position: absolute; left: 0; top: 0; width: auto; height: 0; padding: 0; } 
+.tbDetailDiv_2 .tbHead > span { top: -34px; padding: 0 0 11px; } 
+.tbDetailDiv_2 .tbHead > span .bar { bottom: 0; } 
+.tbDetailDiv_2 .tbRow { margin-top: 48px; } 
+.tbDetailDiv_2 .tbBody { width: 100%; } 
+.tbDetailDiv_2 .tbBody .tbTh { width: 135px; padding: 0 15px 0 10px; } 
+.tbDetailDiv_2 .tbCell { width: 700px; } 
+.dlList,
+.olList,
+.ulList { line-height: 23px; } 
+.dlList + .dlList { margin-top: 0; } 
+.dlList dd + .dlList { padding-top: 0; } 
+.dlList dt { font-weight: 700; margin-bottom: 1px; } 
+.dlList dd { position: relative; font-size: 16px; color: #333; letter-spacing: 0px; margin-top: 3px; } 
+.dlList dd dl,
+.dlList dd ol,
+.dlList dd ul,
+.dlList li dl,
+.olList li ol,
+.ulList li ul { padding-left: 16px; } 
+.dlList.add dd,
+.ulList.add li { position: relative; padding-left: 15px; } 
+.dlList.add .item,
+.ulList.add .item { position: absolute; left: 0; top: 0; } 
+.dlList dd li,
+.olList li,
+.tbList .tbCol dd,
+.tbList .tbCol dt,
+.ulList li { position: relative; word-break: break-all; } 
+.dlList_1 { padding-top: 10px; } 
+.dlList_1:after { content: " "; display: block; height: 0; clear: both; } 
+.dlList_1 dd,
+.dlList_1 dd:before,
+.dlList_1 dt,
+.dlList_1 dt:before { display: inline-block; } 
+.dlList_1 dt:before { content: "\00b7"; color: #bbb; margin: 0 7px 0 0; } 
+.dlList_1 dd:before,
+.tbList .tbCol dt:after { content: ":"; } 
+.dlList_1 dd { width: 353px; } 
+.dlList_1 dd:before { margin: 0 6px 0 1px; } 
+.olList ol,
+.olList ul,
+.ulList ol,
+.ulList ul { font-size: 16px; letter-spacing: 0px; color: #333; margin-top: 5px; } 
+.dlList + .dlList,
+.dlList + .olList,
+.dlList + .ulList,
+.olList + .dlList,
+.olList + .olList,
+.tbList + .tbList,
+.ulList + .dlList,
+.ulList + .ulList { padding-top: 26px; } 
+.olList li .olList,
+.ulList li .ulList { padding-top: 0; } 
+.artRecruit .tbDetailWrap tbody dl:first-child,
+.artRecruit .tbDetailWrap tbody ol:first-child,
+.artRecruit .tbDetailWrap tbody ul:first-child { padding-top: 19px; margin-top: -19px; } 
+.olList li + li,
+.ulList li + li { margin-top: 3px; } 
+.tbList { width: 100%; } 
+.tbList .tbRow { display: table; width: 100%; } 
+.tbList .tbCol,
+.tbList .tbCol dd,
+.tbList .tbCol dt { display: table-cell; } 
+.tbList .tbCol { vertical-align: top; } 
+.detStep .stBx span,
+.tbDetailWrap.va td,
+.tbDetailWrap.va th { vertical-align: middle; } 
+.tbList .tbCol dt { white-space: nowrap; } 
+.tbList .tbCol dt:after { display: inline-block; margin: -2px 6px 0; } 
+.tbList.icnBul dt:before { content: "\00b7"; display: inline-block; color: #bbb; margin: 0 7px 0 0; } 
+.tbList .tbCol_2 { width: 50%; } 
+.tbList .tbCol_3 { width: 33.33%; } 
+.tbList .tbCol_4 { width: 25%; } 
+.tbList .tbCol_5 { width: 20%; } 
+.dlList .icnBul_1,
+.dlList dd .icnBul_2,
+.dlList dd .icnBul_3,
+.dlList dd .icnBul_4,
+.dlList dd .icnBul_5,
+.icnBul_1 dd dl,
+.icnBul_1 dd ol,
+.icnBul_1 dd ul,
+.icnBul_1 li dl,
+.icnBul_1 li ol,
+.icnBul_1 li ul,
+.icnBul_2 dd dl,
+.icnBul_2 dd ol,
+.icnBul_2 dd ul,
+.icnBul_2 li dl,
+.icnBul_2 li ol .icnBul_3 dd dl,
+.icnBul_2 li ul,
+.icnBul_3 dd ol,
+.icnBul_3 dd ul,
+.icnBul_3 li dl,
+.icnBul_3 li ol,
+.icnBul_3 li ul,
+.icnBul_4 dd dl,
+.icnBul_4 dd ol,
+.icnBul_4 dd ul,
+.icnBul_4 li dl,
+.icnBul_4 li ol,
+.icnBul_4 li ul,
+.icnBul_5 dd dl,
+.icnBul_5 dd ol,
+.icnBul_5 dd ul,
+.icnBul_5 li dl,
+.icnBul_5 li ol,
+.icnBul_5 li ul,
+.olList .icnBul_1,
+.olList li .icnBul_2,
+.olList li .icnBul_3,
+.olList li .icnBul_4,
+.olList li .icnBul_5,
+.ulList .icnBul_1,
+.ulList li .icnBul_2,
+.ulList li .icnBul_3,
+.ulList li .icnBul_4,
+.ulList li .icnBul_5 { padding-left: 0; } 
+.icnBul_1 dd:before,
+.icnBul_1 li:before,
+.icnBul_2 dd:before,
+.icnBul_2 li:before,
+.icnBul_3 dd:before,
+.icnBul_3 li:before,
+.icnBul_4 dd:before,
+.icnBul_4 li:before,
+.icnBul_5 dd:before,
+.icnBul_5 li:before { position: absolute; display: inline-block; color: #bbb; } 
+.artDetailStep .listWrap,
+.artRecruit .tbDetailWrap tbody dd,
+.artRecruit .tbDetailWrap tbody li { position: relative; } 
+.icnBul_1 > dd:before,
+.icnBul_1 > li:before { content: "\00b7"; left: 4px; top: 0; margin: 0 4px 0 0; font-weight: bold; } 
+.icnBul_2 > dd:before,
+.icnBul_2 > li:before { content: "-"; left: -1px; top: 0; } 
+.icnBul_3 > dd:before,
+.icnBul_3 > li:before { content: ""; left: 0; top: 12px; width: 4px; height: 4px; margin-top: -2px; border: 1px solid #bbb; border-top: 0; border-right: 0; } 
+.icnBul_4 > dd:before,
+.icnBul_4 > li:before { content: ""; left: 0; top: 10px; width: 5px; height: 5px; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/sp_read_detail.png?2017041717) 0 -35px no-repeat; } 
+.icnBul_5 > dd:before,
+.icnBul_5 > li:before { content: "ㆍ"; left: 0; top: 0; font-weight: bold; } 
+.icnBul_2,
+.icnBul_3,
+.icnBul_4 { margin-top: 0; } 
+.icnBul_1 dd,
+.icnBul_1 li { padding-left: 16px; } 
+.icnBul_2 dd,
+.icnBul_2 li,
+.icnBul_3 dd,
+.icnBul_3 li,
+.icnBul_4 dd,
+.icnBul_4 li,
+.icnBul_5 dd,
+.icnBul_5 li { padding-left: 10px; } 
+.icnBul_5 dd,
+.icnBul_5 li { padding-left: 14px; } 
+.icnBul_2 li,
+.icnBul_3 li,
+.icnBul_4 li { font-size: 16px; letter-spacing: 0px; color: #333; } 
+.artRecruit .tbDetailWrap tbody dd dl:first-child { margin-top: -19px; } 
+.artRecruit .tbDetailWrap tbody .dlList,
+.artRecruit .tbDetailWrap tbody .olList,
+.artRecruit .tbDetailWrap tbody .ulList { padding-top: 19px; margin-top: 0; } 
+.artRecruit .tbDetailWrap tbody dl dd + dd dd dd dl:first-child,
+.artRecruit .tbDetailWrap tbody dl dd + dd dd dd ol:first-child,
+.artRecruit .tbDetailWrap tbody dl dd + dd dd dd ul:first-child,
+.artRecruit .tbDetailWrap tbody li + li li li dl:first-child,
+.artRecruit .tbDetailWrap tbody li + li li li ol:first-child,
+.artRecruit .tbDetailWrap tbody li + li li li ul:first-child { margin-top: -19px; } 
+.artRecruit .tbDetailWrap.ct th { text-rendering: center; } 
+.artRecruit .tbDetailWrap.rt th { text-rendering: right; } 
+.artRecruit .dlList dd + dd dd dd dl dd,
+.artRecruit .dlList dd + dd dd dd ol li,
+.artRecruit .dlList dd + dd dd dd ul li,
+.artRecruit .ulList li + li li li dl dd,
+.artRecruit .ulList li + li li li ol li,
+.artRecruit .ulList li + li li li ul li { letter-spacing: 0px; color: #333; margin-top: 2px; } 
+.artRecruit + .artRecruit { margin-top: 60px; } 
+.artDetailApply .btnWrap { margin-top: 14px; } 
+.artDetailStep .listWrap .desc { margin-top: 36px; } 
+.artDetailStep .stList { padding-top: 15px; } 
+.artDetailStep .stList li { position: relative; float: left; font-weight: 700; margin-top: 0; text-align: center; word-break: break-all; } 
+.artDetailStep .stList li:before { position: absolute; left: 50%; top: -27px; width: 10px; height: 9px; margin-left: -5px; background-position: -30px 0; z-index: 2; } 
+.artDetailStep .stList .bul_1 { text-align: left; } 
+.artDetailStep .stList .bul_1:before { left: 3px; margin: 0; } 
+.artDetailStep .stepBar { position: relative; top: 0; display: block; height: 15px; background: #e0e0e0; } 
+.artDetailStep .stepVertical .stepBar:after,
+.artDetailStep .stepVertical .stepBar:before,
+.mobile { display: none; } 
+.artDetailStep .stepBar:after,
+.artDetailStep .stepBar:before { position: absolute; top: 0; width: 7px; height: 15px; z-index: 1; } 
+.artDetailStep .stepBar:before { left: 0; background-position: 0 0; } 
+.artDetailStep .stepBar:after { right: 0; background-position: -7px 0; } 
+.artDetailStep .detStep_1 + .detStep_1,
+.artDetailStep .detStep_3 + .detStep_3,
+.artDetailStep .detStep_4 + .detStep_4,
+.artDetailStep .detStep_5 + .detStep_5,
+.artDetailStep .detStep_6 + .detStep_6,
+.artDetailStep .detStep_7 + .detStep_7,
+.artDetailStep .detStep_8 + .detStep_8,
+.artDetailStep .stepType_1 .detStep,
+.artDetailStep .stepType_1 + .stepType_1,
+.artDetailStep .stepType_2 .detStep,
+.artDetailStep .stepType_2 + .stepType_2,
+.artDetailStep .stepType_3 .detStep,
+.artDetailStep .stepType_3 + .stepType_3,
+.artDetailStep .stepType_4 .detStep,
+.artDetailStep .stepType_4 + .stepType_4,
+.artDetailStep .stepType_5 .detStep,
+.artDetailStep .stepType_5 + .stepType_4,
+.artDetailStep .stepType_6 .detStep,
+.artDetailStep .stepType_6 + .stepType_6,
+.artDetailStep .stepType_7 .detStep,
+.artDetailStep .stepType_7 + .stepType_7,
+.artDetailStep .stepType_8 + .stepType_8,
+.artDetailStep .stepType_8 ~ .detStep { margin-top: 37px; margin-bottom: 37px; } 
+.artDetailStep .stepType_2 { width: 100%; } 
+.artDetailStep .stepType_2 .stList li { width: 50%; } 
+.artDetailStep .stepType_2 .stList .bul_2,
+.artDetailStep .stepType_3 .stList .bul_3,
+.artDetailStep .stepType_4 .stList .bul_4,
+.artDetailStep .stepType_5 .stList .bul_5,
+.artDetailStep .stepType_6 .stList .bul_6,
+.artDetailStep .stepType_7 .stList .bul_7,
+.artDetailStep .stepType_8 .stList .bul_8 { text-align: right; } 
+.artDetailStep .stepType_2 .stList .bul_2:before,
+.artDetailStep .stepType_3 .stList .bul_3:before,
+.artDetailStep .stepType_4 .stList .bul_4:before,
+.artDetailStep .stepType_5 .stList .bul_5:before,
+.artDetailStep .stepType_6 .stList .bul_6:before,
+.artDetailStep .stepType_7 .stList .bul_7:before,
+.artDetailStep .stepType_8 .stList .bul_8:before { left: auto; right: 3px; margin: 0; } 
+.artDetailStep .stepType_3 { width: 100%; } 
+.artDetailStep .stepType_3 .stList li { width: 33.33%; } 
+.artDetailStep .stepType_4 { width: 100%; } 
+.artDetailStep .stepType_4 .stList li { width: 25%; } 
+.artDetailStep .stepType_5 { width: 100%; } 
+.artDetailStep .stepType_5 .stList li { width: 20.66%; } 
+.artDetailStep .stepType_5 .stList .bul_1,
+.artDetailStep .stepType_5 .stList .bul_5 { width: 19%; } 
+.artDetailStep .stepType_6 { width: 100%; } 
+.artDetailStep .stepType_6 .stList li { width: 19.5%; } 
+.artDetailStep .stepType_6 .stList .bul_1,
+.artDetailStep .stepType_6 .stList .bul_6 { width: 11%; } 
+.artDetailStep .stepType_7 { width: 100%; } 
+.artDetailStep .stepType_7 .stList li { width: 14.28%; } 
+.artDetailStep .stepType_8 { width: 100%; } 
+.artDetailStep .stepType_8 .stList li { width: 12.5%; } 
+.artDetailStep [class*="stepType"] + * { display: table; margin: 0 auto; } 
+.artDetailStep .listWrap .desc + .desc,
+.artDetailStep .listWrap .dlList + .dlList,
+.artDetailStep .listWrap .olList + .olList,
+.artDetailStep .listWrap .ulList + .ulList { margin-top: 9px; } 
+.tplStep,
+.tplStepA:after,
+.tplStepB:before,
+.tplStepM:after,
+.tplStepM:before { display: inline-block; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/sp_read_step.png) no-repeat; vertical-align: middle; line-height: normal; } 
+.tplStepA:after,
+.tplStepB:before,
+.tplStepM:after,
+.tplStepM:before { content: ""; } 
+.detStep.ct { display: table; margin: 0 auto; } 
+.detStep .stBx { display: table; width: 100%; height: 100%; } 
+.detStep .stBx span { display: table-cell; } 
+.detStep ol:after { content: " "; display: block; height: 0; clear: both; } 
+.detStep li { position: relative; float: left; font-weight: 700; text-align: center; word-break: break-all; } 
+.detStep_2 li,
+.detStep_4 li,
+.detStep_5 .bul_1 { text-align: left; } 
+.detStep_1 { padding-top: 49px; } 
+.detStep_1 li:after,
+.detStep_1 li:before { content: ""; display: block; position: absolute; top: -34px; width: 50%; height: 1px; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/bg_step_dot_1.png) repeat-x; z-index: 1; } 
+.detStep_1 li:before { left: 0; background-repeat: left top; } 
+.detStep_1 li:after { right: 0; background-repeat: right top; } 
+.detStep_1 li .bx { display: block; } 
+.detStep_1 li .tplStepB { position: absolute; left: 50%; top: -49px; width: 30px; height: 30px; margin-left: -15px; background-color: #3a3a3a; z-index: 2; } 
+.detStep_1 li .tplStepB:before { position: absolute; left: -1px; top: -1px; width: 32px; height: 32px; z-index: 3; } 
+.detStep_1 .bul_1 { padding-right: 34px; } 
+.detStep_1 .bul_1:before,
+.detStep_1 .bul_5:after { display: none; } 
+.detStep_1 .bul_1 .tplStepB { margin-left: -30px; } 
+.detStep_1 .bul_2 .bx,
+.detStep_1 .bul_3 .bx,
+.detStep_1 .bul_4 .bx { padding: 0 30px; } 
+.detStep_1 .bul_1 .tplStepB:before { background-position: -220px 0; } 
+.detStep_1 .bul_2 .tplStepB:before { background-position: -260px 0; } 
+.detStep_1 .bul_3 .tplStepB:before { background-position: -300px 0; } 
+.detStep_1 .bul_4 .tplStepB:before { background-position: -340px 0; } 
+.detStep_1 .bul_5 { padding-left: 30px; } 
+.detStep_1 .bul_5 .tplStepB { margin-left: 0; } 
+.detStep_1 .bul_5 .tplStepB:before { margin-left: 0; background-position: -220px -40px; } 
+.detStep_2 ol { margin-top: -10px; } 
+.detStep_2 li { position: relative; padding: 0 34px 8px 0; margin: 10px 24px 0 0; border-bottom: 1px solid; } 
+.detStep_2 li .tplStepB { position: absolute; right: -1px; bottom: -2px; display: block; width: 16px; height: 16px; background-position: 0 0; z-index: -1; } 
+.detStep_2 li .tplStepB:before { content: ""; position: absolute; left: -1px; top: -1px; width: 18px; height: 18px; z-index: 1; } 
+.detStep_3 li { max-width: 153px; height: 75px; padding: 0 32px; margin: 0 -10px; z-index: 2; } 
+.detStep_3 li:after,
+.detStep_3 li:before { position: absolute; top: 0; width: 37px; height: 75px; } 
+.detStep_3 li:before { left: 0; background-position: -40px 0; } 
+.detStep_3 li:after { right: 0; background-position: -80px 0; } 
+.detStep_3 .stBx { width: 90px; border-top: 5px solid #3a3a3a; border-bottom: 5px solid #3a3a3a; } 
+.detStep_3 li.odd { z-index: 1; } 
+.detStep_3 li.odd .stBx { border-color: #9c9c9c; } 
+.detStep_3 li.odd:before { background-position: -130px 0; } 
+.detStep_3 li.odd:after { background-position: -170px 0; } 
+.detStep_4 li { font-size: 15px; letter-spacing: 0px; padding: 35px 20px 0; margin-left: 2px; width: 128px; height: 80px; background-color: #f4f4f4; } 
+.detStep_4 li:first-child { margin-left: 0; } 
+.detStep_4 li .stTx { display: block; position: absolute; left: 20px; top: 11px; font-size: 13px; letter-spacing: 0px; color: #999; font-weight: 400; } 
+.artTplDetail .listWrap .detStep_7 li,
+.detStep_4 li.end,
+.detStep_4 li.end .stTx { color: #fff; } 
+.detStep_5 { padding-top: 3px; } 
+.detStep_5 ol { padding-top: 14px; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/bg_step_dot.png) left top
+ repeat-x; } 
+.detStep_5 li .tplStepB { position: absolute; left: 50%; top: -16px; width: 5px; height: 5px; margin-left: -2px; background-color: #cdcdcd; } 
+.detStep_5 li .tplStepB:before { position: absolute; left: -1px; top: -1px; width: 7px; height: 7px; background-position: 0 -50px; } 
+.detStep_5 .bul_1 .tplStepB { left: 0; margin: 0; } 
+.detStep_5 .step_2 li { width: 50%; } 
+.detStep_5 .step_2 .bul_2,
+.detStep_5 .step_3 .bul_3,
+.detStep_5 .step_4 .bul_4,
+.detStep_5 .step_5 .bul_5,
+.detStep_5 .step_6 .bul_6,
+.detStep_5 .step_7 .bul_7,
+.detStep_5 .step_8 .bul_8 { text-align: right; } 
+.detStep_5 .step_2 .bul_2 .tplStepB,
+.detStep_5 .step_3 .bul_3 .tplStepB,
+.detStep_5 .step_4 .bul_4 .tplStepB,
+.detStep_5 .step_5 .bul_5 .tplStepB,
+.detStep_5 .step_6 .bul_6 .tplStepB,
+.detStep_5 .step_7 .bul_7 .tplStepB,
+.detStep_5 .step_8 .bul_8 .tplStepB { left: auto; right: 0; } 
+.detStep_5 .step_3 li { width: 33.33%; } 
+.detStep_5 .step_4 li { width: 25%; } 
+.detStep_5 .step_5 li { width: 20.66%; } 
+.detStep_5 .step_5 .bul_1,
+.detStep_5 .step_5 .bul_5 { width: 19%; } 
+.detStep_5 .step_6 li { width: 19.5%; } 
+.detStep_5 .step_6 .bul_1,
+.detStep_5 .step_6 .bul_6 { width: 11%; } 
+.detStep_5 .step_7 li { width: 14.28%; } 
+.detStep_5 .step_8 li { width: 12.5%; } 
+.detStep_6 li { position: relative; width: 105px; height: 105px; margin-right: 28px; } 
+.detStep_6 li .stBx { z-index: 2; } 
+.detStep_6 li + li:after { position: absolute; left: -22px; top: 50%; width: 18px; height: 11px; margin-top: -6px; background-position: 0 -30px; } 
+.detStep_6 li .tplStep { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #d8d8d8; background-position: 0 -110px; z-index: -1; } 
+.detStep_6 li.end .tplStep { background-position: -120px -110px; } 
+.detStep_7 li { font-size: 18px; letter-spacing: 0px; font-weight: 400; margin-left: 3px; width: 196px; height: 120px; background-color: #313131; } 
+.detStep_7 li .stTx { display: block; font-size: 15px; letter-spacing: 0px; font-weight: 400; margin-top: 4px; } 
+.detStep_7 li:first-child { margin-left: 0; } 
+.detStep_7 li:first-child:before { display: none; } 
+.detStep_7 li + li:before { position: absolute; left: -1px; top: 50%; width: 29px; height: 29px; margin-top: -14px; background-position: 0 -58px; } 
+.detStep_8 li .tplStep,
+.detStep_8 li:after { background-position: 0 -240px; } 
+.detStep_8 { max-width: 800px; } 
+.detStep_8 li { width: 200px; height: 200px; z-index: 2; } 
+.detStep_8 li .tplStep { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #3a3a3a; z-index: -1; } 
+.detStep_8 li:after,
+.detStep_8 li:before { position: absolute; left: 0; top: 0; width: 201px; height: 201px; z-index: -1; } 
+.detStep_8 li:before { background-color: #39f; } 
+.detStep_8 li .stTx { display: block; position: absolute; left: 50%; top: 20px; font-size: 15px; letter-spacing: 0px; color: #fff; font-weight: 400; width: 60px; margin-left: -30px; } 
+.detStep_8 li .stBx { z-index: 2; } 
+.artInquire .tbList { margin-top: 10px; } 
+.artInquire .tbList + .tbList { padding-top: 0; } 
+.artOther .ulList li { font-size: 16px; letter-spacing: 0px; } 
+.detailReadImg .secDetailWrap { padding: 42px 0 0; border: 1px solid #e2e4e3; } 
+.mobile,
+.web { text-align: center; } 
+.artTplDetail .tbpd5 th { height: auto; padding: 5px; } 
+.artTplDetail .tbpd5 td { padding: 5px; } 
+.artTplDetail .tbpd10 th { height: auto; padding: 10px; } 
+.artTplDetail .tbpd10 td { padding: 10px; } 
+.tbDetailDiv .dlList dd,
+.tbDetailDiv .dlList dt,
+.tbDetailWrap td dd,
+.tbDetailWrap td dt { font-weight: 400; font-size: 16px; color: #333; letter-spacing: 0px; } 
+.artDetailStep [class*="stepType"].stepVertical { position: relative; width: 100% !important; margin-bottom: 10px; } 
+.artDetailStep .stepVertical .stepBar { position: absolute; top: 6px; left: 0; bottom: 6px; width: 15px; height: auto; border-radius: 15px; } 
+.artDetailStep .stepVertical .stList { padding-top: 0; } 
+.artDetailStep .stepVertical .stList .detIcnB { float: none; display: block; position: relative; width: auto !important; padding-left: 25px; vertical-align: top; list-style: decimal; line-height: 1.8; text-align: left !important; } 
+.artDetailStep .stepVertical .stList .detIcnB:before { top: 9px; left: 2.5px; margin-left: 0; } 
+.artDetailStep .stepVertical .stList .detIcnB:after { display: none; } 
+.welfare_1 li:before,
+.welfare_2 .wfrBx { display: inline-block; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/sp_icn_welfare.png) no-repeat; vertical-align: middle; line-height: normal; } 
+.welfare_1 .dlList,
+.welfare_1 li,
+.welfare_2 .dlList { line-height: 28px; } 
+.welfare_1 .wfrBx { display: table; width: 100%; height: 102px; } 
+.welfare_1.divide2 .wfrBx .ulList { display: grid; grid-template-columns: 1fr 1fr; } 
+.welfare_1.divide3 .wfrBx .ulList { display: grid; grid-template-columns: 1fr 1fr 1fr; } 
+.welfare_1.divide4 .wfrBx .ulList { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; } 
+.welfare_1 .wfrBx + .wfrBx { margin-top: 8px; } 
+.welfare_1 .dlList dd,
+.welfare_2 .dlList dd { font-size: 16px; letter-spacing: 0px; margin-top: 0; } 
+.welfare_1 .ulList { position: relative; vertical-align: middle; } 
+.welfare_1 li { display: table; font-size: 16px; letter-spacing: 0px; margin-top: 5px; height: 102px; } 
+.welfare_1 li:before { content: ""; position: absolute; top: 50%; left: 0; width: 102px; height: 102px; margin: -51px 0 31px; z-index: 1; } 
+.welfare_1 li > span { display: table-cell; padding: 0 0 0 131px; vertical-align: middle; } 
+.welfare_1 li.wfrBul_1:before { background-position: 0 0; } 
+.welfare_1 .wfrBul_2:before { background-position: 0 -110px; } 
+.welfare_1 .wfrBul_3:before { background-position: 0 -220px; } 
+.welfare_1 .wfrBul_4:before { background-position: 0 -330px; } 
+.welfare_1 .wfrBul_5:before { background-position: 0 -440px; } 
+.welfare_1 .wfrBul_6:before { background-position: 0 -550px; } 
+.welfare_2 .ulList { overflow: hidden; } 
+.welfare_2 .ulList li { float: left; font-size: 18px; letter-spacing: 0px; padding: 0; text-align: center; } 
+.welfare_2 .ulList li:before { display: none; } 
+.welfare_2 .ulList li + li { margin-top: 0; } 
+.welfare_2 .ulList + .dlList { padding-top: 40px; } 
+.welfare_2 .wfrBx { display: flex; justify-content: center; align-items: center; width: 160px; height: 160px; background-position: -112px 0; } 
+.welfare_2 .wfrBx > span { display: table-cell; padding: 0 15px; vertical-align: middle; } 
+.welfare_2 .wfrBx.bg { background-position: -112px -170px; } 
+.welfare_2 .listWrap + .listWrap { margin-top: 40px; } 
+@media only screen and (max-width: 767px) { 
+    img { max-width: 100%; }  
+    .detailHeader .visual { border: 0; } 
+    #container { width: auto; }
+    .detailReadImg .secDetailWrap { padding: 0; border: 0; }  
+    .mobile { display: block; }  
+    .mobile img { width: 100%; }  
+    .web { display: none; } 
+    span.br { display: inline-block !important; margin-right: 5px; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table,
+    #secDetailRead .titleType .artTplDetail,
+    #secDetailRead .titleType .artTplInner { display: block; } 
+    #secDetailRead .secDetailWrap { padding: 30px 0 0; border: 0; font-size: 28px; letter-spacing: -0.5px; } 
+    #secDetailRead .hd_2 { font-size: 48px; letter-spacing: -1px; text-align: center; } 
+    #secDetailRead .hd_3 { margin-bottom: 10px; font-size: 37px; letter-spacing: -1px; color: #000; } 
+    #secDetailRead .hd_3 .tit,
+    #secDetailRead .hd_3 .titBul { vertical-align: middle; } 
+    #secDetailRead .hd_3 .titBul { display: none; } 
+    #secDetailRead .dlList,
+    #secDetailRead .olList,
+    #secDetailRead .ulList { line-height: 1.7; } 
+    #secDetailRead .artRecruit .titBul,
+    #secDetailRead .artTplDetail .titBul { font-size: 34px; letter-spacing: -1px; } 
+    #secDetailRead .artOther .ulList li,
+    #secDetailRead .dlList dd,
+    #secDetailRead .dlList dd li,
+    #secDetailRead .dlList dt,
+    #secDetailRead .olList li,
+    #secDetailRead .ulList li #secDetailRead .ulList li * { font-size: 28px; letter-spacing: -0.5px; } 
+    #secDetailRead .artTopDesc { padding: 0 !important; } 
+    #secDetailRead .artTopDesc > .desc { font-size: 28px; letter-spacing: -0.5px; color: #666; line-height: 1.7; } 
+    #secDetailRead .tbList .tbCol,
+    #secDetailRead .tbList .tbCol_2,
+    #secDetailRead .tbList .tbCol_3 { display: block; width: 100%; } 
+    #secDetailRead .dlList + .dlList,
+    #secDetailRead .dlList + .olList,
+    #secDetailRead .dlList + .ulList,
+    #secDetailRead .olList + .dlList,
+    #secDetailRead .olList + .olList,
+    #secDetailRead .tbList + .tbList,
+    #secDetailRead .ulList + .dlList,
+    #secDetailRead .ulList + .ulList { padding-top: 26px; } 
+    #secDetailRead .dlList dd li,
+    #secDetailRead .olList li,
+    #secDetailRead .ulList li { padding-left: 25px; } 
+    #secDetailRead .dlList dd { margin-top: 6px; padding-left: 25px; } 
+    #secDetailRead .artTplDetail .listWrap .desc,
+    #secDetailRead .tbDetailWrap tbody td .desc { padding-left: 30px; font-size: 28px; letter-spacing: -0.5px; } 
+    #secDetailRead .artTplDetail .listWrap .desc:before,
+    #secDetailRead .tbDetailWrap tbody td .desc:before { top: -2px; } 
+    #secDetailRead .artTplDetail .listWrap dd .desc,
+    #secDetailRead .artTplDetail .listWrap li .desc,
+    #secDetailRead .tbDetailWrap tbody td .desc { font-size: 28px; letter-spacing: -0.5px; } 
+    #secDetailRead .icnBul_3 > dd:before, .icnBul_3 > li:before { width: 8px; height: 8px; } 
+    #secDetailRead .artTplDetail .tbDetailWrap table * { font-size: 20px; letter-spacing: -0.5px; } 
+    #secDetailRead .artTplDetail .titBul img { margin-top: 0; height: 48px; vertical-align: middle; } 
+    #secDetailRead .artTplDetail > .artTplInner > .tbDetailWrap > table > thead > tr > th { height: auto; padding: 10px; line-height: 1.1; } 
+    #secDetailRead .artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td { padding: 10px !important; line-height: 1.1; } 
+    #secDetailRead .newTemp.artTplDetail { width: 100%; } 
+    #secDetailRead .newTemp.artTplDetail table * { font-size: 29px; letter-spacing: -0.5px; } 
+    #secDetailRead .artTplDetail > .artTplInner > .tbDetailWrap { width: 100% !important; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap { width: 100% !important; margin-top: 20px; border-width: 0 0 1px; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > thead { display: none; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody { display: block; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr { display: block; border: 0; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td { display: block; padding: 20px !important; border: 0; border-bottom: 1px solid #ddd; text-align: left !important; line-height: 1.3; background: #fff; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td:first-child { border-bottom: 0; color: #333; font-weight: 700; background: #f0f2f4 !important; font-size: 32px; letter-spacing: -1px; } 
+    #secDetailRead .newTemp.artTplDetail > .artTplInner > .tbDetailWrap > table > tbody > tr > td:first-child
+    * { font-size: 32px; letter-spacing: -1px; } 
+    #secDetailRead .newTemp .artTplDetail { table-layout: auto; width: 100%; } 
+    #secDetailRead .artTplDetail > .titBul { display: none; } 
+    #secDetailRead .artTplDetail > .titBul + .artTplInner { display: block; } 
+    #secDetailRead .artDetailStep [class*="stepType"] + * { position: relative; width: 100% !important; margin-bottom: 10px; } 
+    #secDetailRead .artDetailStep .stepBar,
+    #secDetailRead .artDetailStep .stepBar:after,
+    #secDetailRead .artDetailStep .stepBar:before { display: none; } 
+    #secDetailRead .artDetailStep .stList { padding-top: 0; text-align: left; } 
+    #secDetailRead .artDetailStep .stList .detIcnB { float: none; position: relative; display: inline-block !important; width: auto !important; padding-left: 42px; vertical-align: top; list-style: decimal; line-height: 1.8; text-align: left !important; } 
+    #secDetailRead .artDetailStep .stList .detIcnB:before,
+    #secDetailRead .detStep li:before { content: ""; display: inline-block; position: absolute; top: 50%; left: 9px; width: 16px; height: 24px; margin: 0 !important; vertical-align: middle; background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/sp_read_detail.png?2018120714) -185px
+    0 no-repeat; transform: translateY(-50%); -webkit-transform: translateY(-50%); } 
+    #secDetailRead .artDetailStep .stList .detIcnB:after,
+    #secDetailRead .artDetailStep .stList .detIcnB:first-child:before { display: none; } 
+    #secDetailRead #secDetailRead span.br,
+    br { display: inline-block; margin-right: 5px; } 
+    #secDetailRead .artDetailStep .stList .detIcnB:first-child { padding-left: 0; } 
+    br { content: ""; } 
+    #secDetailRead .btnWrap + .btnWrap { margin-top: 5px; } 
+    #secDetailRead .detBtn { width: auto !important; height: auto; min-width: 47%; margin: 5px 15px 5px 0; text-align: center; } 
+    #secDetailRead .detBtn + .detBtn { margin-left: 0; } 
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    #container { width: auto; }
+    .detailReadImg .secDetailWrap { padding: 0; border: 0; }
+    .web img { width: 100%; } 
+    span.br { display: inline-block !important; margin-right: 5px; } 
+}
+.secDetailWrapTyep2 { padding: 0 50px; font-size: 16px; letter-spacing: 0px; } 
+.secDetailWrapTyep2 .detailBox { overflow: hidden; padding: 55px 0; border-top: 1px solid #ddd; } 
+.secDetailWrapTyep2 .detailBox:first-child { border-top: 2px solid #555; } 
+.secDetailWrapTyep2 .detailBox h2 { float: left; width: 15%; font-size: 22px; letter-spacing: -0.5px; color: #333; font-weight: 700; } 
+.secDetailWrapTyep2 .detailBox .content { float: left; width: 85%; } 
+.secDetailWrapTyep2 .detailBox .content h3 { margin: 30px 0 10px; font-size: 18px; letter-spacing: 0px; color: #00aed9; font-weight: 700; } 
+.secDetailWrapTyep2 .detailBox .content h3:first-child { margin-top: 0; } 
+.secDetailWrapTyep2 .detailBox .content p { margin-bottom: 5px; color: #333; line-height: 1.5; } 
+.secDetailWrapTyep2 .detailBox .content .smallText { font-size: 14px; letter-spacing: 0px; color: #666; } 
+.secDetailWrapTyep2 .detailBox .content .dotList { margin-bottom: 10px; } 
+.secDetailWrapTyep2 .detailBox .content .dotList li { position: relative; padding-left: 10px; } 
+.secDetailWrapTyep2 .detailBox .content .dotList li:after { content: ""; display: block; position: absolute; top: 50%; left: 0; width: 2px; height: 2px; margin-top: -1px; border-radius: 50%; background: #333; } 
+.secDetailWrapTyep2 .detailBox .content .btnGroup { margin-top: 15px; } 
+.secDetailWrapTyep2 .detailBox .content .btnGroup a { display: inline-block; padding: 15px 30px; color: #fff; background: #a0a7b4; } 
+@media only screen and (max-device-width: 767px){ 
+    .secDetailWrapTyep2 { padding: 0 15px; font-size: 14px; letter-spacing: 0px; }  
+    .secDetailWrapTyep2 .detailBox { padding: 25px 0; }  
+    .secDetailWrapTyep2 .detailBox h2 { float: none; width: 100%; margin-bottom: 15px; font-size: 18px; letter-spacing: 0px; }
+    .secDetailWrapTyep2 .detailBox .content { float: none; width: 100%; }
+    .secDetailWrapTyep2 .detailBox .content h3 { font-size: 16px; letter-spacing: 0px; color: #333; }
+    .secDetailWrapTyep2 .detailBox .content .title { color: #a1a1a1; }  .secDetailWrapTyep2 .detailBox .content .btnGroup a { margin: 5px; }
+    .secDetailWrapTyep2 .detailBox .content .smallText { font-size: 12px; letter-spacing: 0px; } 
+}
+.tbDetailType_6 { border-bottom: 1px solid #555; } 
+.tbDetailType_6 thead th { text-align: center; font-weight: 700; } 
+.tbDetailType_6 tbody td { vertical-align: middle; } 
+.tbDetailType_6.tbDetailWrap td,
+.tbDetailType_6.tbDetailWrap th { background-color: transparent; } 
+.tbDetailType_6 td.cell_1,
+.tbDetailType_6 td.cell_4 { text-align: center; } 
+.tbDetailType_6 td + td,
+.tbDetailType_6 th + th,
+.tbDetailType_6 tr + tr td.cell_2,
+.tbDetailType_6 tr + tr td.cell_3 { border-left: 1px solid #e5e5e5; } 
+.titBul_9 > span { width: 28px; height: 16px; margin-top: 8px; } 
+.titBul_9 > span:after { background-position: 0 -59px; } 
+.titBul_10 > span { width: 30px; height: 18px; margin-top: 7px; } 
+.titBul_10 > span:after { background-position: -38px -58px; } 
+.titBul_11 > span { width: 34px; height: 21px; margin-top: 6px; } 
+.titBul_11 > span:after { background-position: -78px -56px; } 
+.titBul_12 > span { width: 34px; height: 21px; margin-top: 6px; } 
+.titBul_12 > span:after { background-position: -122px -57px; } 
+.titBul_13 > span { width: 34px; height: 23px; margin-top: 5px; } 
+.titBul_13 > span:after { background-position: -166px -56px; } 
+.titBul_14 > span { width: 31px; height: 20px; margin-top: 7px; } 
+.titBul_14 > span:after { background-position: -210px -57px; } 
+.titBul_15 > span { width: 31px; height: 20px; margin-top: 7px; } 
+.titBul_15 > span:after { background-position: -251px -57px; } 
+.titBul_16 > span { width: 26px; height: 15px; margin-top: 10px; } 
+.titBul_16 > span:after { background-position: -292px -60px; } 
+.detBtn5 { width: 211px; position: relative; padding: 0; border-width: 1px; border-style: solid; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.detBtn5 span { display: block; position: absolute; left: -5px; top: -5px; width: 100%; height: 53px; padding-top: 15px; color: #fff; font-size: 16px; letter-spacing: 0px; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.detBtn6 { width: 211px; position: relative; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.detBtn6 span { display: block; position: absolute; left: -4px; top: -4px; width: 100%; height: 55px; padding-top: 15px; color: #fff; font-size: 16px; letter-spacing: 0px; text-align: center; border-style: solid; border-width: 1px; background-color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.detBtn7 { border-radius: 55px; } 
+.detBtn7 span { font-size: 16px; letter-spacing: 0px; } 
+.detBtn8 { border-radius: 55px; border-width: 2px; border-style: solid; } 
+.detBtn8 span { font-size: 16px; letter-spacing: 0px; } 
+.detStep { margin-top: 37px; margin-bottom: 37px; } 
+.detStep .caution { font-size: 14px; letter-spacing: 0px; color: #666; } 
+.detStep_content { -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.detStep_content > .headers { margin-bottom: 25px; font-size: 0; } 
+.detStep_content > .headers .header { display: inline-block; font-size: 26px; letter-spacing: -0.5px; color: #333; vertical-align: -1px; } 
+.detStep_content > .headers .description { display: inline-block; margin-left: 17px; font-size: 14px; letter-spacing: 0px; color: #666; } 
+.detStep_list { width: 100%; font-size: 0; text-align: center; } 
+.detStep_list .detStep_item { float: inherit; position: relative; display: inline-block; vertical-align: top; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; } 
+.detStep_list .step_name { font-weight: 700; font-size: 15px; letter-spacing: 0px; color: #333; } 
+.detStep_10 { max-width: 858px; } 
+.detStep_10 .step_name { font-size: 17px; letter-spacing: 0px; line-height: 18px; } 
+.detStep_10 .detStep_item { width: 160px; height: 160px; margin-left: 10px; padding: 114px 20px 0; border-radius: 50%; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.detStep_10 .detStep_item:first-child { margin-left: 0; } 
+.detStep_10 .detStep_item:before { content: ""; display: block; position: absolute; left: 50%; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-det-step10.png?v=20200212); background-repeat: no-repeat; } 
+.detStep_10 .detStep_item-step1:before { top: 33px; width: 68px; height: 67px; background-position: 0 0; } 
+.detStep_10 .detStep_item-step2:before { top: 33px; width: 71px; height: 71px; background-position: -78px 0; } 
+.detStep_10 .detStep_item-step3:before { top: 40px; width: 71px; height: 69px; background-position: -159px 0; } 
+.detStep_10 .detStep_item-step4:before { top: 41px; width: 77px; height: 56px; background-position: -240px 0; } 
+.detStep_10 .detStep_item-step5:before { top: 37px; width: 70px; height: 58px; background-position: -327px 0; } 
+.detStep_10 .caution { margin-top: 29px; text-align: center; } 
+.detStep_11 { max-width: 866px; } 
+.detStep_11 .detStep_content { width: 100%; height: 340px; padding-top: 45px; text-align: center; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/bg-det-step11.jpg); background-repeat: no-repeat; background-position: center top; } 
+.detStep_11 .detStep_item { width: 160px; height: 200px; margin-left: 20px; text-align: center; background-color: #fff; -webkit-box-shadow: 0 0 30px 0 rgba(20, 16, 16, 0.3); box-shadow: 0 0 30px 0 rgba(20, 16, 16, 0.3); } 
+.detStep_11 .detStep_item:first-child { margin-left: 0; } 
+.detStep_11 .detStep_item:before { content: ""; display: block; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-det-step11.png?v=20200212); background-repeat: no-repeat; } 
+.detStep_11 .detStep_item-step1 { padding-top: 55px; } 
+.detStep_11 .detStep_item-step1:before { width: 52px; height: 49px; margin-left: auto; margin-right: auto; margin-bottom: 27px; background-position: 0 0; } 
+.detStep_11 .detStep_item-step2 { padding-top: 52px; } 
+.detStep_11 .detStep_item-step2:before { width: 42px; height: 49px; margin-left: auto; margin-right: auto; margin-bottom: 19px; background-position: -65px 0; } 
+.detStep_11 .detStep_item-step3 { padding-top: 45px; } 
+.detStep_11 .detStep_item-step3:before { width: 52px; height: 58px; margin-left: auto; margin-right: auto; margin-bottom: 27px; background-position: -123px 0; } 
+.detStep_11 .detStep_item-step4 { padding-top: 55px; } 
+.detStep_11 .detStep_item-step4:before { width: 55px; height: 52px; margin-left: auto; margin-right: auto; margin-bottom: 23px; background-position: -185px 0; } 
+.detStep_11 .step_name { font-size: 17px; letter-spacing: 0px; line-height: 18px; } 
+.detStep_11 .caution { margin-top: 27px; color: #fff; } 
+.detStep_12 { max-width: 866px; } 
+.detStep_12 .detStep_content { width: 100%; height: 370px; padding-top: 23px; text-align: center; background-color: #bebcba; } 
+.detStep_12 .detStep_content > .header { position: relative; display: inline-block; margin: 0 auto; padding: 23px 0; margin-bottom: 29px; font-size: 26px; letter-spacing: -0.5px; color: #fff; } 
+.detStep_12 .detStep_content > .header:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 55px; height: 1px; background-color: #fff; -webkit-transform: translateX(-50%); transform: translateX(-50%); } 
+.detStep_12 .detStep_item { width: 130px; margin-left: 13px; } 
+.detStep_12 .detStep_item:first-child { margin-left: 0; } 
+.detStep_12 .detStep_item i.icon { position: relative; display: block; width: 130px; height: 130px; border-radius: 50%; background-color: #fff; } 
+.detStep_12 .detStep_item i.icon:before { content: ""; display: block; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-det-step12.png); background-repeat: no-repeat; } 
+.detStep_12 .detStep_item-step1 i.icon:before { width: 50px; height: 44px; background-position: 0 0; } 
+.detStep_12 .detStep_item-step2 i.icon:before { width: 51px; height: 51px; background-position: -60px 0; } 
+.detStep_12 .detStep_item-step3 i.icon:before { width: 53px; height: 53px; background-position: -121px 0; } 
+.detStep_12 .detStep_item-step4 i.icon:before { width: 70px; height: 49px; background-position: -184px 0; } 
+.detStep_12 .detStep_item-step5 i.icon:before { width: 62px; height: 49px; background-position: -264px 0; } 
+.detStep_12 .step_name { margin-top: 11px; font-size: 17px; letter-spacing: 0px; color: #fff; line-height: 20px; } 
+.detStep_12 .caution { margin-top: 12px; text-align: right; } 
+.detStep_13 { max-width: 866px; } 
+.detStep_13 .detStep_content { width: 100%; height: 280px; padding-top: 70px; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/bg-det-step13.jpg); background-repeat: no-repeat; background-position: center top; } 
+.detStep_13 .detStep_item { width: 160px; height: 160px; padding-top: 29px; margin-left: 20px; background-color: #fff; border-radius: 50%; text-align: center; } 
+.detStep_13 .detStep_item:first-child { margin-left: 0; } 
+.detStep_13 .detStep_item:before { display: block; width: 30px; padding-bottom: 10px; margin: 0 auto 13px; font-size: 22px; letter-spacing: -0.5px; font-weight: 400; color: #333; border-bottom: 1px solid #b2b2b2; } 
+.detStep_13 .detStep_item-step1:before { content: "01"; } 
+.detStep_13 .detStep_item-step2:before { content: "02"; } 
+.detStep_13 .detStep_item-step3:before { content: "03"; } 
+.detStep_13 .detStep_item-step4:before { content: "04"; } 
+.detStep_13 .step_name { font-size: 17px; letter-spacing: 0px; font-weight: 400; line-height: 20px; } 
+.detStep_13 .caution { margin-top: 10px; } 
+.detStep_14 { max-width: 866px; } 
+.detStep_14 .detStep_list { text-align: left; } 
+.detStep_14 .detStep_item { width: 118px; height: 142px; padding-top: 84px; padding-left: 12px; margin-left: 16px; text-align: left; border: 1px solid #a09eba; } 
+.detStep_14 .detStep_item:first-child { margin-left: 0; } 
+.detStep_14 .detStep_item:before { display: block; margin-bottom: 4px; font-size: 13px; letter-spacing: 0px; color: #352727; } 
+.detStep_14 .detStep_item:after { content: ""; position: absolute; right: 0; top: 0; width: 38px; height: 42px; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOCA0MiI+PGxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTA5ZWJhIiB4MT0iMzgiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiAvPjwvc3ZnPg==); background-repeat: no-repeat; } 
+.detStep_14 .detStep_item-step1::before { content: "STEP. 01"; } 
+.detStep_14 .detStep_item-step2::before { content: "STEP. 02"; } 
+.detStep_14 .detStep_item-step3::before { content: "STEP. 03"; } 
+.detStep_14 .detStep_item-step4::before { content: "STEP. 04"; } 
+.detStep_14 .detStep_item-step5 { width: 275px; border-color: #39f; background-color: #39f; } 
+.detStep_14 .detStep_item-step5:before { color: #fff; } 
+.detStep_14 .detStep_item-step5:after { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOCA0MiI+PGxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiB4MT0iMzgiIHkxPSIwIiB4Mj0iMCIgeTI9IjQyIiAvPjwvc3ZnPg==); } 
+.detStep_14 .detStep_item-step5 .step_name { color: #fff; } 
+.detStep_14 .detStep_item-step5::before { content: "STEP. 05"; }
+.detStep_14 .description { display: block; text-align: center; margin-top: 25px; font-size: 14px; letter-spacing: 0px; color: #666; } 
+.detStep_14.custom-step .detStep_item-step1::before,
+.detStep_14.custom-step .detStep_item-step2::before,
+.detStep_14.custom-step .detStep_item-step3::before,
+.detStep_14.custom-step .detStep_item-step4::before,
+.detStep_14.custom-step .detStep_item-step5::before{display: none;}
+.detStep_14.custom-step .detStep_item .step_num{margin-bottom: 4px; font-size: 13px; letter-spacing: 0px; color: #352727;}
+.detStep_14.custom-step .detStep_item.last-step{ width: 275px; border-color: #39f; background-color: #39f; color: #fff;}
+.detStep_14.custom-step .detStep_item.last-step::after{filter: contrast(10);}
+.detStep_14.custom-step .detStep_item.last-step .step_name{color: #fff;}
+.detStep_14.custom-step .detStep_item.last-step .step_num{color: #fff;}
+.detStep_14.custom-step .detStep_list{display: flex; flex-wrap: wrap; gap: 16px;}
+.detStep_14.custom-step .detStep_list .detStep_item{margin-left: 0;}
+.detStep_14 .step_name { font-size: 15px; letter-spacing: 0px; font-weight: 700; color: #000; line-height: 16px; } 
+.detStep_15 { max-width: 866px; } 
+.detStep_15 .detStep_list { text-align: left; } 
+.detStep_15 .detStep_item { width: 130px; height: 140px; padding: 102px 15px 0; margin-left: 30px; border: 1px solid #39f; background-color: #fff; text-align: center; } 
+.detStep_15 .detStep_item:first-child { margin-left: 0; } 
+.detStep_15 .detStep_item:before { content: ""; display: block; position: absolute; left: 50%; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-det-step15.png?v=20200211); background-repeat: no-repeat; } 
+.detStep_15 .detStep_item-step1:before { top: 21px; width: 67px; height: 58px; background-position: 0 0; } 
+.detStep_15 .detStep_item-step2:before { top: 22px; width: 81px; height: 58px; background-position: -77px 0; } 
+.detStep_15 .detStep_item-step3:before { top: 21px; width: 76px; height: 60px; background-position: -168px 0; } 
+.detStep_15 .detStep_item-step4:before { top: 17px; width: 61px; height: 74px; background-position: -254px 0; } 
+.detStep_15 .detStep_item-step5 { margin-left: 58px; background-color: #39f; } 
+.detStep_15 .detStep_item-step5:after { content: ""; display: block; position: absolute; left: -39px; top: 50%; width: 17px; height: 8px; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-icon15.png?v=20200211); background-repeat: no-repeat; -webkit-transform: translateY(-50%); transform: translateY(-50%); } 
+.detStep_15 .detStep_item-step5 .step_name { color: #fff; } 
+.detStep_15 .detStep_item-step5:before { top: 28px; width: 63px; height: 56px; background-position: -325px 0; } 
+.detStep_15 .step_name { font-size: 15px; letter-spacing: 0px; line-height: 16px; } 
+.detStep_15 .caution { margin-top: 23px; text-align: center; } 
+.detStep_16 { max-width: 815px; } 
+.detStep_16 .detStep_item { width: 123px; height: 140px; padding-top: 100px; margin-left: 50px; background-color: #fff; text-align: center; } 
+.detStep_16 .detStep_item:first-child { margin-left: 0; } 
+.detStep_16 .detStep_item:first-child:after { display: none; } 
+.detStep_16 .detStep_item:before { content: ""; display: block; position: absolute; left: 50%; top: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-det-step16.png); background-repeat: no-repeat; } 
+.detStep_16 .detStep_item:after { content: ""; display: block; position: absolute; left: -28px; top: 50%; width: 8px; height: 14px; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-icon16.png?v=20200212); background-repeat: no-repeat; -webkit-transform: translateY(-50%); transform: translateY(-50%); } 
+.detStep_16 .detStep_item-step1:before { top: 21px; width: 67px; height: 58px; background-position: 0 0; } 
+.detStep_16 .detStep_item-step2:before { top: 22px; width: 81px; height: 58px; background-position: -77px 0; } 
+.detStep_16 .detStep_item-step3:before { top: 21px; width: 76px; height: 60px; background-position: -168px 0; } 
+.detStep_16 .detStep_item-step4:before { top: 17px; width: 61px; height: 74px; background-position: -254px 0; } 
+.detStep_16 .detStep_item-step5:before { top: 28px; width: 63px; height: 56px; background-position: -325px 0; } 
+.detStep_16 .step_name { font-size: 15px; letter-spacing: 0px; } 
+.detStep_16 .caution { width: 474px; height: 40px; padding-top: 11px; margin: 13px auto 0; text-align: center; background-color: #f7f7f7; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+
+
+.detStep_16_1 { max-width: 815px; } 
+.detStep_16_1 .detStep_list{display: flex; justify-content:center; align-items: flex-start;}
+.detStep_16_1 .detStep_item { width: 100px; margin-left: 16px; background-color: #fff; display: flex; flex-direction: column; gap: 5px; padding: 10px 0;} 
+.detStep_16_1 .detStep_item:first-child { margin-left: 0; } 
+.detStep_16_1 .detStep_item:first-child:after { display: none; } 
+.detStep_16_1 .detStep_item:before { content: ""; display: block; background-repeat: no-repeat; width: 100px; height: 70px; min-height: 70px;} 
+.detStep_16_1 .detStep_item:after { content: ""; display: block; position: absolute; left: -12px; top: 60px; width: 8px; height: 14px; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/step/sprite-icon16.png?v=20200212); background-repeat: no-repeat;} 
+.detStep_16_1 .detStep_item-1:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item1.svg);} 
+.detStep_16_1 .detStep_item-2:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item2.svg); } 
+.detStep_16_1 .detStep_item-3:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item3.svg); } 
+.detStep_16_1 .detStep_item-4:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item4.svg); } 
+.detStep_16_1 .detStep_item-5:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item5.svg); } 
+.detStep_16_1 .detStep_item-6:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item6.svg); } 
+.detStep_16_1 .detStep_item-7:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item7.svg); } 
+.detStep_16_1 .detStep_item-8:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item8.svg); } 
+.detStep_16_1 .detStep_item-9:before { background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type16/progress_item9.svg); } 
+.detStep_16_1 .detStep_list .step_name { font-size: 16px; letter-spacing: 0px; font-weight: 600; color: #333;} 
+.detStep_16_1 .caution { display:flex; align-items:center; justify-content:center; width: 536px; height: 40px; margin: 32px auto 0; text-align: center; background-color: #f7f7f6; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 16px; font-weight: 400; color: #818181; } 
+
+.detStep_17 { max-width: 815px; } 
+.detStep_17 .detStep_list{display: flex; justify-content:center; align-items: center;}
+.detStep_17 .detStep_item { width: 172px; min-width: 172px; height: 172px; min-height: 172px;  display: flex; justify-content: center; align-items: center; border-radius: 50%; margin-left: -16px;}
+.detStep_17 .detStep_item:first-child{margin-left: 0;}
+.detStep_17 .step-item{width: calc(172px - ( 16px * 2 )); height: calc(172px - ( 16px * 2 )); background-color: #fff; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; border-radius: 50%; padding: 20px; box-sizing: border-box; gap: 4px;}
+.detStep_17 .step_num{color: #7C7C7C; font-size: 12px; font-weight: 400;}
+.detStep_17 .step_name{color: #000; font-size: 20px; font-weight: 600; letter-spacing: -0.5px;}
+.detStep_17 .step_name::after{content: ''; display:block; width: calc(100% + 4px); height: 1px; background-color: #000; margin-top: 8px;}
+
+.detStep_18 { max-width: 815px; } 
+.detStep_18 .detStep_list{display: flex; justify-content:center; align-items: center;}
+.detStep_18 .detStep_item { width: 128px; min-width: 128px; height: 128px; min-height: 128px;  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; margin-left: 40px;}
+.detStep_18 .detStep_item:first-child{margin-left: 0;}
+.detStep_18 .detStep_item:first-child::before{display: none;}
+.detStep_18 .detStep_item::before{content: ''; width: 24px; height: 1px; background-color: #D3D3D3; display: block; position: absolute; top: 50%; left: calc(-24px - (( 40px - 24px ) / 2) );}
+.detStep_18 .detStep_item.step1{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type18/step1.svg);}
+.detStep_18 .detStep_item.step2{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type18/step2.svg);}
+.detStep_18 .detStep_item.step3{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type18/step3.svg);}
+.detStep_18 .detStep_item.step4{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type18/step4.svg);}
+.detStep_18 .detStep_item.step5{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type18/step5.svg);}
+.detStep_18 .step_num{color: #D3D3D3; font-size: 12px; font-weight: 400;}
+.detStep_18 .step_name{color: #222; font-size: 16px; font-weight: 700;}
+.detStep_18 .finish .step_name{color: #3399FF;}
+
+.detStep_19 { max-width: 815px; } 
+.detStep_19 .detStep_list{display: flex; justify-content:center; align-items: center;}
+.detStep_19 .detStep_item { width: 124px; min-width: 124px; height: 140px; min-height: 140px;  display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 36px; border-radius: 16px; border: 2px solid #E3E3E3;}
+.detStep_19 .detStep_item:last-child{margin-right: 0;}
+.detStep_19 .detStep_item:last-child::after{display: none;}
+.detStep_19 .detStep_item::after{content: ''; width: 16px; height: 8px; display: block; position: absolute; top: 50%; right: -17px; transform: translateY(-4px); background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type19/arrow.svg); background-size: contain; background-repeat: no-repeat;}
+.detStep_19 .step_name{color: #222; font-size: 16px; font-weight: 600; line-height: 19px;}
+.detStep_19 .finish{border: none; background-color: #3399FF; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/progress/type19/clap.svg); background-repeat: no-repeat; background-position: center bottom;}
+.detStep_19 .finish .step_name{color: #fff;}
+
+
+.detail_background1 { background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/background/bg01.png); } 
+.detail_background2 { background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/background/bg02.png); } 
+.detail_background3 { background: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/background/bg03.png); } 
+.welfare_3 { background-color: #f7f7f7; text-align: left; font-size: 0; } 
+.welfare_3_type_box { background-color: transparent; } 
+.welfare_3_type_box .welfare_3_item { border: 1px solid #e1e1e1; font-weight: 400; } 
+.welfare_3_item { position: relative; display: inline-block; width: 180px; height: 180px; padding-top: 119px; margin: 0 10px 10px 0; text-align: center; font-size: 14px; letter-spacing: 0px; color: #333; font-weight: 700; vertical-align: top; line-height: 17px; border: 1px solid transparent; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.welfare_3_item:before { content: ""; display: block; position: absolute; left: 50%; top: 24px; width: 80px; height: 80px; margin-left: -40px; background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/sprite-icon-benefit.png); background-repeat: no-repeat; } 
+.welfare_3_item1:before { background-position: 0 0; } 
+.welfare_3_item2:before { background-position: -90px 0; } 
+.welfare_3_item3:before { background-position: -180px 0; } 
+.welfare_3_item4:before { background-position: -270px 0; } 
+.welfare_3_item5:before { background-position: -360px 0; } 
+.welfare_3_item6:before { background-position: -450px 0; } 
+.welfare_3_item7:before { background-position: -540px 0; } 
+.welfare_3_item8:before { background-position: -630px 0; } 
+.welfare_3_item9:before { background-position: -720px 0; } 
+.welfare_3_item10:before { background-position: -810px 0; } 
+.welfare_3_item11:before { background-position: 0 -90px; } 
+.welfare_3_item12:before { background-position: -90px -90px; } 
+.welfare_3_item13:before { background-position: -180px -90px; } 
+.welfare_3_item14:before { background-position: -270px -90px; } 
+.welfare_3_item15:before { background-position: -360px -90px; } 
+.welfare_3_item16:before { background-position: -450px -90px; } 
+.welfare_3_item17:before { background-position: -540px -90px; } 
+.welfare_3_item18:before { background-position: -630px -90px; } 
+.welfare_3_item19:before { background-position: -720px -90px; } 
+.welfare_3_item20:before { background-position: -810px -90px; } 
+.welfare_3_item21:before { background-position: 0 -180px; } 
+.welfare_3_item22:before { background-position: -90px -180px; } 
+.welfare_3_item23:before { background-position: -180px -180px; } 
+.welfare_3_item24:before { background-position: -270px -180px; } 
+.welfare_3_item25:before { background-position: -360px -180px; } 
+.welfare_3_item26:before { background-position: -450px -180px; } 
+.welfare_3_item27:before { background-position: -540px -180px; } 
+.welfare_3_item28:before { background-position: -630px -180px; } 
+.welfare_3_item29:before { background-position: -720px -180px; } 
+.welfare_3_item30:before { background-position: -810px -180px; } 
+.welfare_3_item31:before { background-position: 0 -270px; } 
+.welfare_3_item32:before { background-position: -90px -270px; } 
+.welfare_3_item33:before { background-position: -180px -270px; } 
+.welfare_3_item34:before { background-position: -270px -270px; } 
+.welfare_3_item35:before { background-position: -360px -270px; } 
+.welfare_3_item36:before { background-position: -450px -270px; } 
+.welfare_3_item37:before { background-position: -540px -270px; } 
+.welfare_3_item38:before { background-position: -630px -270px; } 
+.welfare_3_item39:before { background-position: -720px -270px; } 
+.welfare_3_item40:before { background-position: -810px -270px; } 
+.welfare_3_item41:before { background-position: 0 -360px; } 
+.welfare_3_item42:before { background-position: -90px -360px; } 
+.welfare_3_item43:before { background-position: -180px -360px; } 
+.welfare_3_item44:before { background-position: -270px -360px; } 
+.welfare_3_item45:before { background-position: -360px -360px; } 
+.welfare_3_item46:before { background-position: -450px -360px; } 
+.welfare_3_item47:before { background-position: -540px -360px; } 
+.welfare_3_item48:before { background-position: -630px -360px; } 
+.welfare_3_item49:before { background-position: -720px -360px; } 
+.welfare_3_item50:before { background-position: -810px -360px; } 
+.welfare_3_item51:before { background-position: 0 -450px; } 
+.welfare_3_item52:before { background-position: -90px -450px; } 
+.welfare_3_item53:before { background-position: -180px -450px; } 
+.welfare_3_item54:before { background-position: -270px -450px; } 
+.welfare_3_item55:before { background-position: -360px -450px; } 
+@media only screen and (max-width: 1000px) { 
+    img { max-width: 100%; } 
+}
+
+
+/* 신규 type1 */
+.welfare_4 { background-color: transparent; text-align: left; font-size: 0; }
+.welfare_4 .welfare_new_item{width: 180px; height: 180px; padding-top: 119px; margin: 0 10px 10px 0; text-align: center; font-size: 14px; letter-spacing: 0px; color: #333; font-weight: 700; vertical-align: top; line-height: 17px; border: 1px solid transparent; -webkit-box-sizing: border-box; box-sizing: border-box;  display: inline-flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 0; background-color: #f7f7f7; gap: 20px;}
+.welfare_4 .welfare_new_item::before{content: ""; display: block; width: 56px; min-width: 56px; height: 56px; background-repeat: no-repeat; background-position: center;}
+
+/* 신규 - box line type */
+.welfare_4.welfare_type_box{background-color: unset}
+.welfare_4.welfare_type_box_line{background-color: unset}
+.welfare_4.welfare_type_box_line .welfare_new_item{ border: 1px solid #e1e1e1;  background-color: transparent;}
+
+/* 신규 - box list type */
+.welfare_4.welfare_type_box_list{background-color: unset; display: grid; grid-template-columns: 1fr; gap: 12px;}
+.welfare_4.welfare_type_box_list .welfare_new_item{justify-content: flex-start; margin: 0;}
+.welfare_4.welfare_type_box_list .welfare_new_item .text_group{ text-align: left; display: flex; flex-direction: column; gap: 8px;}
+.welfare_4.welfare_type_box_list .welfare_new_item .text_group .title{font-size: 24px; font-weight: 700; line-height: 29px; word-break: keep-all;}
+.welfare_4.welfare_type_box_list .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; line-height: 19px; word-break: keep-all;}
+.welfare_4.welfare_type_box_list.divide2{grid-template-columns: 1fr 1fr; gap: 12px 32px;}
+.welfare_4.welfare_type_box_list.divide3{grid-template-columns: 1fr 1fr 1fr;}
+.welfare_4.welfare_type_box_list.divide3 .welfare_new_item::before{width: 80px; min-width: 80px; height: 80px; border-radius: 8px; background-color: #f7f7f7;}
+.welfare_4.welfare_type_box_list.divide4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.welfare_4.welfare_type_box_list .welfare_new_item{background-color: unset; flex-direction: row; width: auto; height: auto;}
+.welfare_4.welfare_type_box_list .welfare_new_item::before{width: 102px; min-width: 102px; height: 102px; border-radius: 8px; background-color: #f7f7f7;}
+
+/* 신규 - circle list type */
+.welfare_4.welfare_type_circle_list .welfare_new_item{border-radius: 50%;}
+.welfare_4.welfare_type_circle_list{background-color: unset; display: grid; grid-template-columns: 1fr; gap: 12px;}
+.welfare_4.welfare_type_circle_list .welfare_new_item{justify-content: flex-start;}
+.welfare_4.welfare_type_circle_list .welfare_new_item .text_group{ text-align: left; display: flex; flex-direction: column; gap: 8px;}
+.welfare_4.welfare_type_circle_list .welfare_new_item .text_group .title{font-size: 24px; font-weight: 700; line-height: 29px; word-break: keep-all;}
+.welfare_4.welfare_type_circle_list .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; line-height: 19px; word-break: keep-all;}
+.welfare_4.welfare_type_circle_list.divide2{grid-template-columns: 1fr 1fr;}
+.welfare_4.welfare_type_circle_list.divide3{grid-template-columns: 1fr 1fr 1fr;}
+.welfare_4.welfare_type_circle_list.divide3 .welfare_new_item::before{width: 80px; min-width: 80px; height: 80px; border-radius: 8px; background-color: #f7f7f7;}
+.welfare_4.welfare_type_circle_list.divide4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.welfare_4.welfare_type_circle_list .welfare_new_item{background-color: unset; flex-direction: row; width: auto; height: auto;}
+.welfare_4.welfare_type_circle_list .welfare_new_item::before{width: 102px; min-width: 102px; height: 102px; border-radius: 50%; background-color: #f7f7f7;}
+
+/* 신규 - empty list type */
+.welfare_4.welfare_type_empty_list .welfare_new_item{border-radius: 50%;}
+.welfare_4.welfare_type_empty_list{background-color: unset; display: grid; grid-template-columns: 1fr; gap: 12px;}
+.welfare_4.welfare_type_empty_list .welfare_new_item{justify-content: flex-start;}
+.welfare_4.welfare_type_empty_list .welfare_new_item .text_group{ text-align: left; display: flex; flex-direction: column; gap: 8px;}
+.welfare_4.welfare_type_empty_list .welfare_new_item .text_group .title{font-size: 24px; font-weight: 700; line-height: 29px; word-break: keep-all;}
+.welfare_4.welfare_type_empty_list .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; line-height: 19px; word-break: keep-all;}
+.welfare_4.welfare_type_empty_list.divide2{grid-template-columns: 1fr 1fr;}
+.welfare_4.welfare_type_empty_list.divide3{grid-template-columns: 1fr 1fr 1fr;}
+.welfare_4.welfare_type_empty_list.divide3 .welfare_new_item::before{width: 80px; min-width: 80px; height: 80px; border-radius: 8px; background-color: #f7f7f7;}
+.welfare_4.welfare_type_empty_list.divide4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.welfare_4.welfare_type_empty_list .welfare_new_item{background-color: unset; flex-direction: row; width: auto; height: auto;}
+.welfare_4.welfare_type_empty_list .welfare_new_item::before{width: 102px; min-width: 102px; height: 102px; border-radius: 50%; background-color: transparent;}
+
+/* 복리후생 아이콘 그룹 - 시계/달력/경조사 */
+.welfare_4 .new_item_1_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group1/welfare_item_1.svg);}
+.welfare_4 .new_item_1_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group1/welfare_item_2.svg);}
+.welfare_4 .new_item_1_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group1/welfare_item_3.svg);}
+.welfare_4 .new_item_1_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group1/welfare_item_4.svg);}
+.welfare_4 .new_item_1_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group1/welfare_item_5.svg);}
+.welfare_4 .new_item_1_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group1/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 그룹 - 휴가/어학연수/해외 */
+.welfare_4 .new_item_2_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_1.svg);}
+.welfare_4 .new_item_2_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_2.svg);}
+.welfare_4 .new_item_2_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_3.svg);}
+.welfare_4 .new_item_2_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_4.svg);}
+.welfare_4 .new_item_2_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_5.svg);}
+.welfare_4 .new_item_2_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_6.svg);}
+.welfare_4 .new_item_2_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_7.svg);}
+.welfare_4 .new_item_2_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_8.svg);}
+.welfare_4 .new_item_2_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_9.svg);}
+.welfare_4 .new_item_2_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_10.svg);}
+.welfare_4 .new_item_2_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_11.svg);}
+.welfare_4 .new_item_2_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group2/welfare_item_12.svg);}
+
+/* 복리후생 아이콘 그룹 - 상장/선물/웰컴키트 */
+.welfare_4 .new_item_3_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_1.svg);}
+.welfare_4 .new_item_3_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_2.svg);}
+.welfare_4 .new_item_3_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_3.svg);}
+.welfare_4 .new_item_3_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_4.svg);}
+.welfare_4 .new_item_3_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_5.svg);}
+.welfare_4 .new_item_3_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_6.svg);}
+.welfare_4 .new_item_3_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_7.svg);}
+.welfare_4 .new_item_3_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_8.svg);}
+.welfare_4 .new_item_3_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_9.svg);}
+.welfare_4 .new_item_3_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_10.svg);}
+.welfare_4 .new_item_3_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_11.svg);}
+.welfare_4 .new_item_3_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_12.svg);}
+.welfare_4 .new_item_3_13::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_13.svg);}
+.welfare_4 .new_item_3_14::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_14.svg);}
+.welfare_4 .new_item_3_15::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_15.svg);}
+.welfare_4 .new_item_3_16::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_16.svg);}
+.welfare_4 .new_item_3_17::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group3/welfare_item_17.svg);}
+
+/* 복리후생 아이콘 그룹 - 돈/카드/학자금/대출 */
+.welfare_4 .new_item_4_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_1.svg);}
+.welfare_4 .new_item_4_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_2.svg);}
+.welfare_4 .new_item_4_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_3.svg);}
+.welfare_4 .new_item_4_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_4.svg);}
+.welfare_4 .new_item_4_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_5.svg);}
+.welfare_4 .new_item_4_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_6.svg);}
+.welfare_4 .new_item_4_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_7.svg);}
+.welfare_4 .new_item_4_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_8.svg);}
+.welfare_4 .new_item_4_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group4/welfare_item_9.svg);}
+
+/* 복리후생 아이콘 그룹 - 교통수단 */
+.welfare_4 .new_item_5_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group5/welfare_item_1.svg);}
+.welfare_4 .new_item_5_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group5/welfare_item_2.svg);}
+.welfare_4 .new_item_5_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group5/welfare_item_3.svg);}
+.welfare_4 .new_item_5_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group5/welfare_item_4.svg);}
+
+/* 복리후생 아이콘 그룹 - 복장/작업복 */
+.welfare_4 .new_item_6_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_1.svg);}
+.welfare_4 .new_item_6_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_2.svg);}
+.welfare_4 .new_item_6_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_3.svg);}
+.welfare_4 .new_item_6_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_4.svg);}
+.welfare_4 .new_item_6_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_5.svg);}
+.welfare_4 .new_item_6_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_6.svg);}
+.welfare_4 .new_item_6_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_7.svg);}
+.welfare_4 .new_item_6_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_8.svg);}
+.welfare_4 .new_item_6_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_9.svg);}
+.welfare_4 .new_item_6_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group6/welfare_item_10.svg);}
+
+/* 복리후생 아이콘 그룹 - 심리상담/휴게실 */
+.welfare_4 .new_item_7_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_1.svg);}
+.welfare_4 .new_item_7_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_2.svg);}
+.welfare_4 .new_item_7_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_3.svg);}
+.welfare_4 .new_item_7_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_4.svg);}
+.welfare_4 .new_item_7_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_5.svg);}
+.welfare_4 .new_item_7_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_6.svg);}
+.welfare_4 .new_item_7_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group7/welfare_item_7.svg);}
+
+/* 복리후생 아이콘 그룹 - 휴대폰/노트북 */
+.welfare_4 .new_item_8_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_1.svg);}
+.welfare_4 .new_item_8_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_2.svg);}
+.welfare_4 .new_item_8_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_3.svg);}
+.welfare_4 .new_item_8_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_4.svg);}
+.welfare_4 .new_item_8_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_5.svg);}
+.welfare_4 .new_item_8_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_6.svg);}
+.welfare_4 .new_item_8_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group8/welfare_item_7.svg);}
+
+/* 복리후생 아이콘 그룹 - 건물/기숙사/금연 */
+.welfare_4 .new_item_9_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group9/welfare_item_1.svg);}
+.welfare_4 .new_item_9_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group9/welfare_item_2.svg);}
+.welfare_4 .new_item_9_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group9/welfare_item_3.svg);}
+.welfare_4 .new_item_9_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group9/welfare_item_4.svg);}
+.welfare_4 .new_item_9_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group9/welfare_item_5.svg);}
+.welfare_4 .new_item_9_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group9/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 그룹 - 식사 */
+.welfare_4 .new_item_10_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_1.svg);}
+.welfare_4 .new_item_10_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_2.svg);}
+.welfare_4 .new_item_10_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_3.svg);}
+.welfare_4 .new_item_10_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_4.svg);}
+.welfare_4 .new_item_10_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_5.svg);}
+.welfare_4 .new_item_10_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_6.svg);}
+.welfare_4 .new_item_10_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_7.svg);}
+.welfare_4 .new_item_10_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_8.svg);}
+.welfare_4 .new_item_10_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group10/welfare_item_9.svg);}
+
+/* 복리후생 아이콘 그룹 - 커피/차/간식 */
+.welfare_4 .new_item_11_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_1.svg);}
+.welfare_4 .new_item_11_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_2.svg);}
+.welfare_4 .new_item_11_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_3.svg);}
+.welfare_4 .new_item_11_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_4.svg);}
+.welfare_4 .new_item_11_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_5.svg);}
+.welfare_4 .new_item_11_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_6.svg);}
+.welfare_4 .new_item_11_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_7.svg);}
+.welfare_4 .new_item_11_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group11/welfare_item_8.svg);}
+
+/* 복리후생 아이콘 그룹 - 동호회 */
+.welfare_4 .new_item_12_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_1.svg);}
+.welfare_4 .new_item_12_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_2.svg);}
+.welfare_4 .new_item_12_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_3.svg);}
+.welfare_4 .new_item_12_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_4.svg);}
+.welfare_4 .new_item_12_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_5.svg);}
+.welfare_4 .new_item_12_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_6.svg);}
+.welfare_4 .new_item_12_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_7.svg);}
+.welfare_4 .new_item_12_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_8.svg);}
+.welfare_4 .new_item_12_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_9.svg);}
+.welfare_4 .new_item_12_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_10.svg);}
+.welfare_4 .new_item_12_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_11.svg);}
+.welfare_4 .new_item_12_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_12.svg);}
+.welfare_4 .new_item_12_13::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_13.svg);}
+.welfare_4 .new_item_12_14::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_14.svg);}
+.welfare_4 .new_item_12_15::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_15.svg);}
+.welfare_4 .new_item_12_16::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_16.svg);}
+.welfare_4 .new_item_12_17::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group12/welfare_item_17.svg);}
+
+/* 복리후생 아이콘 그룹 - 교육/도서 */
+.welfare_4 .new_item_13_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_1.svg);}
+.welfare_4 .new_item_13_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_2.svg);}
+.welfare_4 .new_item_13_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_3.svg);}
+.welfare_4 .new_item_13_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_4.svg);}
+.welfare_4 .new_item_13_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_5.svg);}
+.welfare_4 .new_item_13_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_6.svg);}
+.welfare_4 .new_item_13_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_7.svg);}
+.welfare_4 .new_item_13_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_8.svg);}
+.welfare_4 .new_item_13_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_9.svg);}
+.welfare_4 .new_item_13_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_10.svg);}
+.welfare_4 .new_item_13_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_11.svg);}
+.welfare_4 .new_item_13_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group13/welfare_item_12.svg);}
+
+/* 복리후생 아이콘 그룹 - 건강검진/병원/약/금연 */
+.welfare_4 .new_item_14_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_1.svg);}
+.welfare_4 .new_item_14_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_2.svg);}
+.welfare_4 .new_item_14_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_3.svg);}
+.welfare_4 .new_item_14_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_4.svg);}
+.welfare_4 .new_item_14_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_5.svg);}
+.welfare_4 .new_item_14_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_6.svg);}
+.welfare_4 .new_item_14_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_7.svg);}
+.welfare_4 .new_item_14_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_8.svg);}
+.welfare_4 .new_item_14_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_9.svg);}
+.welfare_4 .new_item_14_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_10.svg);}
+.welfare_4 .new_item_14_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_11.svg);}
+.welfare_4 .new_item_14_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_12.svg);}
+.welfare_4 .new_item_14_13::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group14/welfare_item_13.svg);}
+
+/* 복리후생 아이콘 그룹 - 출산/육아 */
+.welfare_4 .new_item_15_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group15/welfare_item_1.svg);}
+.welfare_4 .new_item_15_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group15/welfare_item_2.svg);}
+.welfare_4 .new_item_15_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group15/welfare_item_3.svg);}
+.welfare_4 .new_item_15_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group15/welfare_item_4.svg);}
+.welfare_4 .new_item_15_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type1/welfare_item_group15/welfare_item_5.svg);}
+
+
+
+
+
+/* 신규 type2 */
+.welfare_5 { background-color: transparent; text-align: left; font-size: 0; }
+.welfare_5 .welfare_new_item{width: 180px; height: 180px; padding-top: 119px; margin: 0 10px 10px 0; text-align: center; font-size: 14px; letter-spacing: 0px; color: #333; font-weight: 700; vertical-align: top; line-height: 17px; border: 1px solid transparent; -webkit-box-sizing: border-box; box-sizing: border-box;  display: inline-flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 0; background-color: #f7f7f7; gap: 20px;}
+.welfare_5 .welfare_new_item::before{content: ""; display: block; width: 72px; min-width: 72px; height: 72px; min-height: 72px; background-repeat: no-repeat; background-position: center;}
+
+/* 신규 - box line type */
+.welfare_5.welfare_type_box{background-color: unset}
+.welfare_5.welfare_type_box_line{background-color: unset}
+.welfare_5.welfare_type_box_line .welfare_new_item{ border: 1px solid #e1e1e1;  background-color: transparent;}
+
+/* 신규 - box list type */
+.welfare_5.welfare_type_box_list{background-color: unset; display: grid; grid-template-columns: 1fr; gap: 12px;}
+.welfare_5.welfare_type_box_list .welfare_new_item{justify-content: flex-start; margin: 0;}
+.welfare_5.welfare_type_box_list .welfare_new_item .text_group{ text-align: left; display: flex; flex-direction: column; gap: 8px;}
+.welfare_5.welfare_type_box_list .welfare_new_item .text_group .title{font-size: 24px; font-weight: 700; line-height: 29px; word-break: keep-all;}
+.welfare_5.welfare_type_box_list .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; line-height: 19px; word-break: keep-all;}
+.welfare_5.welfare_type_box_list.divide2{grid-template-columns: 1fr 1fr; gap: 12px 32px;}
+.welfare_5.welfare_type_box_list.divide3{grid-template-columns: 1fr 1fr 1fr;}
+.welfare_5.welfare_type_box_list.divide3 .welfare_new_item::before{width: 80px; min-width: 80px; height: 80px; border-radius: 8px; background-color: #f7f7f7;}
+.welfare_5.welfare_type_box_list.divide4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.welfare_5.welfare_type_box_list .welfare_new_item{background-color: unset; flex-direction: row; width: auto; height: auto;}
+.welfare_5.welfare_type_box_list .welfare_new_item::before{width: 102px; min-width: 102px; height: 102px; border-radius: 8px; background-color: #f7f7f7;}
+
+/* 신규 - circle list type */
+.welfare_5.welfare_type_circle_list .welfare_new_item{border-radius: 50%;}
+.welfare_5.welfare_type_circle_list{background-color: unset; display: grid; grid-template-columns: 1fr; gap: 12px;}
+.welfare_5.welfare_type_circle_list .welfare_new_item{justify-content: flex-start;}
+.welfare_5.welfare_type_circle_list .welfare_new_item .text_group{ text-align: left; display: flex; flex-direction: column; gap: 8px;}
+.welfare_5.welfare_type_circle_list .welfare_new_item .text_group .title{font-size: 24px; font-weight: 700; line-height: 29px; word-break: keep-all;}
+.welfare_5.welfare_type_circle_list .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; line-height: 19px; word-break: keep-all;}
+.welfare_5.welfare_type_circle_list.divide2{grid-template-columns: 1fr 1fr;}
+.welfare_5.welfare_type_circle_list.divide3{grid-template-columns: 1fr 1fr 1fr;}
+.welfare_5.welfare_type_circle_list.divide3 .welfare_new_item::before{width: 80px; min-width: 80px; height: 80px; border-radius: 8px; background-color: #f7f7f7;}
+.welfare_5.welfare_type_circle_list.divide4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.welfare_5.welfare_type_circle_list .welfare_new_item{background-color: unset; flex-direction: row; width: auto; height: auto;}
+.welfare_5.welfare_type_circle_list .welfare_new_item::before{width: 102px; min-width: 102px; height: 102px; border-radius: 50%; background-color: #f7f7f7;}
+
+/* 신규 - empty list type */
+.welfare_5.welfare_type_empty_list .welfare_new_item{border-radius: 50%;}
+.welfare_5.welfare_type_empty_list{background-color: unset; display: grid; grid-template-columns: 1fr; gap: 12px;}
+.welfare_5.welfare_type_empty_list .welfare_new_item{justify-content: flex-start;}
+.welfare_5.welfare_type_empty_list .welfare_new_item .text_group{ text-align: left; display: flex; flex-direction: column; gap: 8px;}
+.welfare_5.welfare_type_empty_list .welfare_new_item .text_group .title{font-size: 24px; font-weight: 700; line-height: 29px; word-break: keep-all;}
+.welfare_5.welfare_type_empty_list .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; line-height: 19px; word-break: keep-all;}
+.welfare_5.welfare_type_empty_list.divide2{grid-template-columns: 1fr 1fr;}
+.welfare_5.welfare_type_empty_list.divide3{grid-template-columns: 1fr 1fr 1fr;}
+.welfare_5.welfare_type_empty_list.divide3 .welfare_new_item::before{width: 80px; min-width: 80px; height: 80px; border-radius: 8px; background-color: #f7f7f7;}
+.welfare_5.welfare_type_empty_list.divide4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.welfare_5.welfare_type_empty_list .welfare_new_item{background-color: unset; flex-direction: row; width: auto; height: auto;}
+.welfare_5.welfare_type_empty_list .welfare_new_item::before{width: 102px; min-width: 102px; height: 102px; border-radius: 50%; background-color: transparent;}
+
+/* 복리후생 아이콘 type2 - 식대/식사제공 */
+.welfare_5 .new_item_1_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_1.svg);}
+.welfare_5 .new_item_1_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_2.svg);}
+.welfare_5 .new_item_1_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_3.svg);}
+.welfare_5 .new_item_1_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_4.svg);}
+.welfare_5 .new_item_1_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_5.svg);}
+.welfare_5 .new_item_1_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_6.svg);}
+.welfare_5 .new_item_1_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group1/welfare_item_7.svg);}
+
+/* 복리후생 아이콘 type2 - 상여금/명절떡값 */
+.welfare_5 .new_item_2_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group2/welfare_item_1.svg);}
+.welfare_5 .new_item_2_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group2/welfare_item_2.svg);}
+.welfare_5 .new_item_2_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group2/welfare_item_3.svg);}
+
+/* 복리후생 아이콘 type2 - 우수사원 표창 */
+.welfare_5 .new_item_3_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group3/welfare_item_1.svg);}
+.welfare_5 .new_item_3_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group3/welfare_item_2.svg);}
+.welfare_5 .new_item_3_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group3/welfare_item_3.svg);}
+.welfare_5 .new_item_3_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group3/welfare_item_4.svg);}
+.welfare_5 .new_item_3_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group3/welfare_item_5.svg);}
+
+/* 복리후생 아이콘 type2 - 동호회비 지원 */
+.welfare_5 .new_item_4_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_1.svg);}
+.welfare_5 .new_item_4_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_2.svg);}
+.welfare_5 .new_item_4_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_3.svg);}
+.welfare_5 .new_item_4_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_4.svg);}
+.welfare_5 .new_item_4_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_5.svg);}
+.welfare_5 .new_item_4_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_6.svg);}
+.welfare_5 .new_item_4_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_7.svg);}
+.welfare_5 .new_item_4_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_8.svg);}
+.welfare_5 .new_item_4_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_9.svg);}
+.welfare_5 .new_item_4_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group4/welfare_item_10.svg);}
+
+/* 복리후생 아이콘 type2 - 휴식실/안마의자 */
+.welfare_5 .new_item_5_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group5/welfare_item_1.svg);}
+.welfare_5 .new_item_5_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group5/welfare_item_2.svg);}
+.welfare_5 .new_item_5_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group5/welfare_item_3.svg);}
+
+/* 복리후생 아이콘 type2 - 휴양시설 */
+.welfare_5 .new_item_6_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group6/welfare_item_1.svg);}
+.welfare_5 .new_item_6_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group6/welfare_item_2.svg);}
+.welfare_5 .new_item_6_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group6/welfare_item_3.svg);}
+
+/* 복리후생 아이콘 type2 - 경조사휴가/리프레쉬휴가 */
+.welfare_5 .new_item_7_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group7/welfare_item_1.svg);}
+.welfare_5 .new_item_7_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group7/welfare_item_2.svg);}
+.welfare_5 .new_item_7_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group7/welfare_item_3.svg);}
+.welfare_5 .new_item_7_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group7/welfare_item_4.svg);}
+.welfare_5 .new_item_7_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group7/welfare_item_5.svg);}
+.welfare_5 .new_item_7_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group7/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 type2 - 생일/선물/웰컴키트 */
+.welfare_5 .new_item_8_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_1.svg);}
+.welfare_5 .new_item_8_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_2.svg);}
+.welfare_5 .new_item_8_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_3.svg);}
+.welfare_5 .new_item_8_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_4.svg);}
+.welfare_5 .new_item_8_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_5.svg);}
+.welfare_5 .new_item_8_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_6.svg);}
+.welfare_5 .new_item_8_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_7.svg);}
+.welfare_5 .new_item_8_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_8.svg);}
+.welfare_5 .new_item_8_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group8/welfare_item_9.svg);}
+
+/* 복리후생 아이콘 type2 - 자율복장/작업복 제공 */
+.welfare_5 .new_item_9_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_1.svg);}
+.welfare_5 .new_item_9_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_2.svg);}
+.welfare_5 .new_item_9_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_3.svg);}
+.welfare_5 .new_item_9_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_4.svg);}
+.welfare_5 .new_item_9_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_5.svg);}
+.welfare_5 .new_item_9_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_6.svg);}
+.welfare_5 .new_item_9_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group9/welfare_item_7.svg);}
+
+/* 복리후생 아이콘 type2 - 사내카페/커피/차 */
+.welfare_5 .new_item_10_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_1.svg);}
+.welfare_5 .new_item_10_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_2.svg);}
+.welfare_5 .new_item_10_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_3.svg);}
+.welfare_5 .new_item_10_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_4.svg);}
+.welfare_5 .new_item_10_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_5.svg);}
+.welfare_5 .new_item_10_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_6.svg);}
+.welfare_5 .new_item_10_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_7.svg);}
+.welfare_5 .new_item_10_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_8.svg);}
+.welfare_5 .new_item_10_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_9.svg);}
+.welfare_5 .new_item_10_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_10.svg);}
+.welfare_5 .new_item_10_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group10/welfare_item_11.svg);}
+
+/* 복리후생 아이콘 type2 - 도서/업무용품 지원 */
+.welfare_5 .new_item_11_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group11/welfare_item_1.svg);}
+.welfare_5 .new_item_11_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group11/welfare_item_2.svg);}
+.welfare_5 .new_item_11_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group11/welfare_item_3.svg);}
+.welfare_5 .new_item_11_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group11/welfare_item_4.svg);}
+.welfare_5 .new_item_11_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group11/welfare_item_5.svg);}
+
+/* 복리후생 아이콘 type2 - 해외연수/여행지원 */
+.welfare_5 .new_item_12_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group12/welfare_item_1.svg);}
+.welfare_5 .new_item_12_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group12/welfare_item_2.svg);}
+.welfare_5 .new_item_12_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group12/welfare_item_3.svg);}
+.welfare_5 .new_item_12_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group12/welfare_item_4.svg);}
+.welfare_5 .new_item_12_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group12/welfare_item_5.svg);}
+.welfare_5 .new_item_12_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group12/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 type2 - 각종 교육 지원 */
+.welfare_5 .new_item_13_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_1.svg);}
+.welfare_5 .new_item_13_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_2.svg);}
+.welfare_5 .new_item_13_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_3.svg);}
+.welfare_5 .new_item_13_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_4.svg);}
+.welfare_5 .new_item_13_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_5.svg);}
+.welfare_5 .new_item_13_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_6.svg);}
+.welfare_5 .new_item_13_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_7.svg);}
+.welfare_5 .new_item_13_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group13/welfare_item_8.svg);}
+
+/* 복리후생 아이콘 type2 - 행사/워크샵/체육대회 */
+.welfare_5 .new_item_14_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group14/welfare_item_1.svg);}
+.welfare_5 .new_item_14_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group14/welfare_item_2.svg);}
+.welfare_5 .new_item_14_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group14/welfare_item_3.svg);}
+.welfare_5 .new_item_14_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group14/welfare_item_4.svg);}
+.welfare_5 .new_item_14_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group14/welfare_item_5.svg);}
+
+/* 복리후생 아이콘 type2 - 야근교통비 */
+.welfare_5 .new_item_15_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group15/welfare_item_1.svg);}
+.welfare_5 .new_item_15_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group15/welfare_item_2.svg);}
+
+/* 복리후생 아이콘 type2 - 돈/대출/포인트 */
+.welfare_5 .new_item_16_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_1.svg);}
+.welfare_5 .new_item_16_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_2.svg);}
+.welfare_5 .new_item_16_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_3.svg);}
+.welfare_5 .new_item_16_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_4.svg);}
+.welfare_5 .new_item_16_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_5.svg);}
+.welfare_5 .new_item_16_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_6.svg);}
+.welfare_5 .new_item_16_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_7.svg);}
+.welfare_5 .new_item_16_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_8.svg);}
+.welfare_5 .new_item_16_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group16/welfare_item_9.svg);}
+
+/* 복리후생 아이콘 type2 - 건강검진지원 */
+.welfare_5 .new_item_17_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_1.svg);}
+.welfare_5 .new_item_17_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_2.svg);}
+.welfare_5 .new_item_17_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_3.svg);}
+.welfare_5 .new_item_17_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_4.svg);}
+.welfare_5 .new_item_17_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_5.svg);}
+.welfare_5 .new_item_17_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_6.svg);}
+.welfare_5 .new_item_17_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_7.svg);}
+.welfare_5 .new_item_17_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_8.svg);}
+.welfare_5 .new_item_17_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_9.svg);}
+.welfare_5 .new_item_17_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group17/welfare_item_10.svg);}
+
+/* 복리후생 아이콘 type2 - 간식제공 */
+.welfare_5 .new_item_18_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group18/welfare_item_1.svg);}
+.welfare_5 .new_item_18_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group18/welfare_item_2.svg);}
+.welfare_5 .new_item_18_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group18/welfare_item_3.svg);}
+.welfare_5 .new_item_18_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group18/welfare_item_4.svg);}
+.welfare_5 .new_item_18_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group18/welfare_item_5.svg);}
+.welfare_5 .new_item_18_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group18/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 type2 - 출산/육아/육아휴직  */
+.welfare_5 .new_item_19_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_1.svg);}
+.welfare_5 .new_item_19_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_2.svg);}
+.welfare_5 .new_item_19_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_3.svg);}
+.welfare_5 .new_item_19_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_4.svg);}
+.welfare_5 .new_item_19_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_5.svg);}
+.welfare_5 .new_item_19_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_6.svg);}
+.welfare_5 .new_item_19_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_7.svg);}
+.welfare_5 .new_item_19_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_8.svg);}
+.welfare_5 .new_item_19_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group19/welfare_item_9.svg);}
+
+/* 복리후생 아이콘 type2 - 회식/비어데이*/
+.welfare_5 .new_item_20_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group20/welfare_item_1.svg);}
+.welfare_5 .new_item_20_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group20/welfare_item_2.svg);}
+.welfare_5 .new_item_20_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group20/welfare_item_3.svg);}
+.welfare_5 .new_item_20_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group20/welfare_item_4.svg);}
+
+/* 복리후생 아이콘 type2 - 명상교육/심리상담 */
+.welfare_5 .new_item_21_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group21/welfare_item_1.svg);}
+.welfare_5 .new_item_21_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group21/welfare_item_2.svg);}
+.welfare_5 .new_item_21_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group21/welfare_item_3.svg);}
+.welfare_5 .new_item_21_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group21/welfare_item_4.svg);}
+
+/* 복리후생 아이콘 type2 - 단독사옥/건물/기숙사/금연 */
+.welfare_5 .new_item_22_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group22/welfare_item_1.svg);}
+.welfare_5 .new_item_22_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group22/welfare_item_2.svg);}
+.welfare_5 .new_item_22_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group22/welfare_item_3.svg);}
+.welfare_5 .new_item_22_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group22/welfare_item_4.svg);}
+.welfare_5 .new_item_22_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type2/welfare_item_group22/welfare_item_5.svg);}
+
+
+/* 신규 type3 */
+.welfare_6 { background-color: transparent; text-align: left; font-size: 0; }
+.welfare_6 .welfare_new_item{width: 252px; height: 192px; padding-top: 119px; margin: 0 10px 10px 0; font-size: 14px; letter-spacing: 0px; color: #333; font-weight: 700; vertical-align: top; line-height: 17px; border: 1px solid transparent; -webkit-box-sizing: border-box; box-sizing: border-box;  display: inline-flex; justify-content: center; align-items: flex-start; flex-direction: column; padding-top: 0; background-color: #F0F0F0; gap: 16px; border-radius: 8px; padding: 24px 28px;}
+.welfare_6 .welfare_new_item::before{content: ""; display: block; width: 56px; min-width: 56px; height: 56px; min-height: 56px; background-repeat: no-repeat; background-position: center;}
+.welfare_6 .welfare_new_item .text_group{display:flex; flex-direction: column; gap: 4px;}
+.welfare_6 .welfare_new_item .text_group .title{font-size: 28px; font-weight: 700; color: #000; line-height: 29px; letter-spacing: -0.5px;}
+.welfare_6 .welfare_new_item .text_group .text{font-size: 16px; font-weight: 400; color: #222; line-height: 19px;}
+
+/* 신규 - box line type */
+.welfare_6.welfare_type_box{background-color: unset}
+.welfare_6.welfare_type_box.dark_theme .welfare_new_item{background-color: #404040;}
+.welfare_6.welfare_type_box.dark_theme .welfare_new_item::before{filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);}
+.welfare_6.welfare_type_box.dark_theme .welfare_new_item .text_group .title{color: #fff;}
+.welfare_6.welfare_type_box.dark_theme .welfare_new_item .text_group .text{color: #fff;}
+
+.welfare_6.welfare_type_box .welfare_new_item.dark_theme{background-color: #404040;}
+.welfare_6.welfare_type_box .welfare_new_item.dark_theme::before{filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);}
+.welfare_6.welfare_type_box .welfare_new_item.dark_theme .text_group .title{color: #fff;}
+.welfare_6.welfare_type_box .welfare_new_item.dark_theme .text_group .text{color: #fff;}
+
+
+/* 복리후생 아이콘 type2 - 시계/달력/경조사 */
+.welfare_6 .new_item_1_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group1/welfare_item_1.svg);}
+.welfare_6 .new_item_1_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group1/welfare_item_2.svg);}
+.welfare_6 .new_item_1_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group1/welfare_item_3.svg);}
+
+/* 복리후생 아이콘 type2 - 휴가/어학연수/해외 */
+.welfare_6 .new_item_2_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_1.svg);}
+.welfare_6 .new_item_2_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_2.svg);}
+.welfare_6 .new_item_2_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_3.svg);}
+.welfare_6 .new_item_2_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_4.svg);}
+.welfare_6 .new_item_2_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_5.svg);}
+.welfare_6 .new_item_2_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_6.svg);}
+.welfare_6 .new_item_2_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_8.svg);}
+.welfare_6 .new_item_2_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_8.svg);}
+.welfare_6 .new_item_2_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_9.svg);}
+.welfare_6 .new_item_2_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group2/welfare_item_10.svg);}
+
+/* 복리후생 아이콘 type2 - 상장/선물/웰컴키트 */
+.welfare_6 .new_item_3_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_1.svg);}
+.welfare_6 .new_item_3_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_2.svg);}
+.welfare_6 .new_item_3_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_3.svg);}
+.welfare_6 .new_item_3_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_4.svg);}
+.welfare_6 .new_item_3_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_5.svg);}
+.welfare_6 .new_item_3_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_6.svg);}
+.welfare_6 .new_item_3_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_8.svg);}
+.welfare_6 .new_item_3_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_8.svg);}
+.welfare_6 .new_item_3_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_9.svg);}
+.welfare_6 .new_item_3_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_10.svg);}
+.welfare_6 .new_item_3_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_11.svg);}
+.welfare_6 .new_item_3_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group3/welfare_item_12.svg);}
+
+/* 복리후생 아이콘 type2 - 돈/카드/학자금/대출 */
+.welfare_6 .new_item_4_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_1.svg);}
+.welfare_6 .new_item_4_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_2.svg);}
+.welfare_6 .new_item_4_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_3.svg);}
+.welfare_6 .new_item_4_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_4.svg);}
+.welfare_6 .new_item_4_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_5.svg);}
+.welfare_6 .new_item_4_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_6.svg);}
+.welfare_6 .new_item_4_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_8.svg);}
+.welfare_6 .new_item_4_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_8.svg);}
+.welfare_6 .new_item_4_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_9.svg);}
+.welfare_6 .new_item_4_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_10.svg);}
+.welfare_6 .new_item_4_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_11.svg);}
+.welfare_6 .new_item_4_12::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group4/welfare_item_12.svg);}
+
+/* 복리후생 아이콘 type2 - 교통수단 */
+.welfare_6 .new_item_5_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_1.svg);}
+.welfare_6 .new_item_5_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_2.svg);}
+.welfare_6 .new_item_5_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_3.svg);}
+.welfare_6 .new_item_5_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_4.svg);}
+.welfare_6 .new_item_5_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_5.svg);}
+.welfare_6 .new_item_5_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_6.svg);}
+.welfare_6 .new_item_5_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_8.svg);}
+.welfare_6 .new_item_5_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_8.svg);}
+.welfare_6 .new_item_5_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group5/welfare_item_9.svg);}
+
+/* 복리후생 아이콘 type2 - 복장/작업복 */
+.welfare_6 .new_item_6_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_1.svg);}
+.welfare_6 .new_item_6_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_2.svg);}
+.welfare_6 .new_item_6_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_3.svg);}
+.welfare_6 .new_item_6_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_4.svg);}
+.welfare_6 .new_item_6_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_5.svg);}
+.welfare_6 .new_item_6_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_6.svg);}
+.welfare_6 .new_item_6_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_8.svg);}
+.welfare_6 .new_item_6_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_8.svg);}
+.welfare_6 .new_item_6_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_9.svg);}
+.welfare_6 .new_item_6_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group6/welfare_item_10.svg);}
+
+/* 복리후생 아이콘 type2 - 심리상담/휴게실 */
+.welfare_6 .new_item_7_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group7/welfare_item_1.svg);}
+.welfare_6 .new_item_7_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group7/welfare_item_2.svg);}
+.welfare_6 .new_item_7_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group7/welfare_item_3.svg);}
+.welfare_6 .new_item_7_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group7/welfare_item_4.svg);}
+.welfare_6 .new_item_7_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group7/welfare_item_5.svg);}
+
+/* 복리후생 아이콘 type2 - 휴대폰/노트북 */
+.welfare_6 .new_item_8_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group8/welfare_item_1.svg);}
+.welfare_6 .new_item_8_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group8/welfare_item_2.svg);}
+.welfare_6 .new_item_8_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group8/welfare_item_3.svg);}
+.welfare_6 .new_item_8_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group8/welfare_item_4.svg);}
+.welfare_6 .new_item_8_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group8/welfare_item_5.svg);}
+.welfare_6 .new_item_8_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group8/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 type2 - 건물/기숙사/금연 */
+.welfare_6 .new_item_9_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group9/welfare_item_1.svg);}
+.welfare_6 .new_item_9_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group9/welfare_item_2.svg);}
+.welfare_6 .new_item_9_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group9/welfare_item_3.svg);}
+.welfare_6 .new_item_9_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group9/welfare_item_4.svg);}
+.welfare_6 .new_item_9_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group9/welfare_item_5.svg);}
+.welfare_6 .new_item_9_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group9/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 type2 - 식사 */
+.welfare_6 .new_item_10_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group10/welfare_item_1.svg);}
+.welfare_6 .new_item_10_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group10/welfare_item_2.svg);}
+.welfare_6 .new_item_10_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group10/welfare_item_3.svg);}
+.welfare_6 .new_item_10_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group10/welfare_item_4.svg);}
+.welfare_6 .new_item_10_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group10/welfare_item_5.svg);}
+.welfare_6 .new_item_10_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group10/welfare_item_6.svg);}
+
+/* 복리후생 아이콘 type2 - 커피/차/간식 */
+.welfare_6 .new_item_11_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group11/welfare_item_1.svg);}
+.welfare_6 .new_item_11_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group11/welfare_item_2.svg);}
+.welfare_6 .new_item_11_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group11/welfare_item_3.svg);}
+.welfare_6 .new_item_11_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group11/welfare_item_4.svg);}
+.welfare_6 .new_item_11_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group11/welfare_item_5.svg);}
+
+/* 복리후생 아이콘 type2 - 동호회 */
+.welfare_6 .new_item_12_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_1.svg);}
+.welfare_6 .new_item_12_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_2.svg);}
+.welfare_6 .new_item_12_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_3.svg);}
+.welfare_6 .new_item_12_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_4.svg);}
+.welfare_6 .new_item_12_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_5.svg);}
+.welfare_6 .new_item_12_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_6.svg);}
+.welfare_6 .new_item_12_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_7.svg);}
+.welfare_6 .new_item_12_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group12/welfare_item_8.svg);}
+
+/* 복리후생 아이콘 type2 - 교육/도서 */
+.welfare_6 .new_item_13_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_1.svg);}
+.welfare_6 .new_item_13_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_2.svg);}
+.welfare_6 .new_item_13_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_3.svg);}
+.welfare_6 .new_item_13_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_4.svg);}
+.welfare_6 .new_item_13_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_5.svg);}
+.welfare_6 .new_item_13_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_6.svg);}
+.welfare_6 .new_item_13_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_7.svg);}
+.welfare_6 .new_item_13_8::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_8.svg);}
+.welfare_6 .new_item_13_9::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_9.svg);}
+.welfare_6 .new_item_13_10::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_10.svg);}
+.welfare_6 .new_item_13_11::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group13/welfare_item_11.svg);}
+
+/* 복리후생 아이콘 type2 - 건강검진/병원/약/금연 */
+.welfare_6 .new_item_14_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_1.svg);}
+.welfare_6 .new_item_14_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_2.svg);}
+.welfare_6 .new_item_14_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_3.svg);}
+.welfare_6 .new_item_14_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_4.svg);}
+.welfare_6 .new_item_14_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_5.svg);}
+.welfare_6 .new_item_14_6::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_6.svg);}
+.welfare_6 .new_item_14_7::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group14/welfare_item_7.svg);}
+
+/* 복리후생 아이콘 type2 - 출산/육아 */
+.welfare_6 .new_item_15_1::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group15/welfare_item_1.svg);}
+.welfare_6 .new_item_15_2::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group15/welfare_item_2.svg);}
+.welfare_6 .new_item_15_3::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group15/welfare_item_3.svg);}
+.welfare_6 .new_item_15_4::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group15/welfare_item_4.svg);}
+.welfare_6 .new_item_15_5::before{background-image: url(https://i.jobkorea.kr/content/images/ver_1/jobs/detail/benefit/type3/welfare_item_group15/welfare_item_5.svg);}
+
+
+.font14 li,
+.font14 dt,
+.font14 dd,
+.font14 td,
+.font14 th,
+.font14 p,
+.font14 span,
+.font14 div,
+.font14 { font-size: 14px !important; letter-spacing: 0px; }
+.font15 li,
+.font15 dt,
+.font15 dd,
+.font15 td,
+.font15 th,
+.font15 p,
+.font15 span,
+.font15 div,
+.font15 { font-size: 15px !important; letter-spacing: 0px; } 
+
+
+
+
+
+
+/* Table 1 */
+
